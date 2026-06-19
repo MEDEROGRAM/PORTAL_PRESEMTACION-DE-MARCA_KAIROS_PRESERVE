@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="es" class="smooth-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kairos Preserve - Propuesta de Dirección de Arte</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cinzel para títulos elegantes, Montserrat para lectura fluida -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandSand: '#F2EFE9',
+                        brandIvory: '#FDFBF7',
+                        brandSage: '#8FA08E',
+                        brandOlive: '#4E5B4B',
+                        brandWood: '#A88C6F',
+                        brandGold: '#C5A059',
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ocultar barra de scroll pero mantener funcionalidad */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Animaciones sutiles */
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Transición de imágenes suave */
+        .img-transition {
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-brandIvory text-brandOlive font-sans antialiased selection:bg-brandSage selection:text-white">
+
+    <!-- Header / Barra de Navegación Premium -->
+    <header class="fixed top-0 left-0 w-full bg-brandIvory/90 backdrop-blur-md z-50 border-b border-brandSand px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <span class="font-serif tracking-[0.25em] text-xs md:text-sm font-semibold">KAIROS PRESERVE</span>
+        </div>
+        <nav class="hidden md:flex space-x-8 text-[10px] font-medium tracking-widest uppercase">
+            <a href="#origen" class="hover:text-brandGold transition-colors">El Origen</a>
+            <a href="#evolucion" class="hover:text-brandGold transition-colors">La Evolución</a>
+            <a href="#propuestas" class="hover:text-brandGold transition-colors">Propuestas de Logo</a>
+            <a href="#aplicaciones" class="hover:text-brandGold transition-colors">Aplicaciones Reales</a>
+        </nav>
+        <div>
+            <a href="#aplicaciones" class="border border-brandOlive text-brandOlive text-[10px] tracking-widest uppercase px-5 py-2.5 hover:bg-brandOlive hover:text-brandIvory transition-all duration-300 rounded-none">
+                Ver Aplicaciones
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section / Portada de Presentación -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24 pb-16 relative bg-gradient-to-b from-brandIvory via-brandIvory to-brandSand">
+        <div class="max-w-4xl fade-in z-10 my-auto">
+            <span class="text-[10px] tracking-[0.4em] uppercase text-brandGold font-semibold mb-4 block">Dirección de Arte y Evolución de Identidad</span>
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl tracking-[0.15em] text-brandOlive mb-6 leading-tight">
+                KAIROS PRESERVE
+            </h1>
+            <div class="w-20 h-[1px] bg-brandGold/60 mx-auto mb-8"></div>
+            <p class="text-xs md:text-sm text-brandOlive/80 max-w-xl mx-auto font-light leading-relaxed mb-12">
+                Un paso adelante en nuestra historia. Cómo adaptamos la fuerza geométrica del entrenamiento de Pilates hacia la fluidez y el bienestar orgánico de un Spa y club de longevidad.
+            </p>
+            <div class="flex justify-center relative">
+                <!-- Botón clásico libre de superposiciones -->
+                <a href="#origen" class="border border-brandOlive text-brandOlive text-[10px] tracking-widest uppercase px-8 py-3.5 hover:bg-brandOlive hover:text-brandIvory transition-all duration-300 rounded-none relative z-20">
+                    Comenzar Análisis
+                </a>
+            </div>
+        </div>
+        
+        <!-- Indicador de Scroll Responsivo (oculto en móviles para evitar colisión visual) -->
+        <div class="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center space-y-2 z-0">
+            <span class="text-[9px] tracking-[0.25em] uppercase text-brandOlive/50">Sigue bajando</span>
+            <div class="w-[1px] h-10 bg-brandOlive/20 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1/2 bg-brandGold animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- El Origen y la Idea Base -->
+    <section id="origen" class="py-24 px-6 md:px-12 lg:px-24 bg-brandIvory border-t border-brandSand">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-5 space-y-6">
+                <span class="text-[10px] tracking-[0.25em] uppercase text-brandGold font-semibold">El Punto de Partida</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-wide text-brandOlive leading-snug">
+                    El Legado de Kairos Sport
+                </h2>
+                <div class="w-12 h-[1px] bg-brandGold"></div>
+                <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                    Nuestra marca original, <strong>Kairos Sport</strong>, nació con un propósito muy claro: honrar la creación del cuerpo y el movimiento a través del entrenamiento físico y la disciplina.
+                </p>
+                <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                    Visualmente, representamos este concepto a través del <em>"tiempo sagrado"</em> (el momento oportuno o el tiempo de Dios). Esto lo logramos escondiendo un reloj de arena abstracto dentro de una letra <strong>K</strong> compuesta por líneas completamente rectas, rígidas y de carácter geométrico, transmitiendo rendimiento y un lujo silencioso.
+                </p>
+            </div>
+            
+            <div class="lg:col-span-7 bg-brandSand p-8 md:p-12 rounded-2xl border border-brandSand/60 flex flex-col justify-center items-center text-center">
+                <span class="text-[10px] tracking-widest uppercase text-brandOlive/50 mb-8 font-medium">Logotipo Original (Kairos Sport)</span>
+                <!-- Imagen real del Logotipo Original de Kairos Sport -->
+                <div class="w-64 h-64 bg-brandIvory rounded-xl border border-brandOlive/10 flex items-center justify-center relative p-6 mb-8 shadow-sm">
+                    <img src="https://i.postimg.cc/1XXyVHQy/Recurso-5m11ks.png" alt="Logotipo Original Kairos Sport" class="max-w-full max-h-full object-contain">
+                </div>
+                <p class="text-[11px] tracking-wider text-brandOlive/60 max-w-sm font-light leading-relaxed">
+                    Trazos rectos, ángulos marcados y una estructura robusta pensada en la fuerza física, la simetría y el rendimiento deportivo clásico.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- La Evolución / La Justificación del Cambio -->
+    <section id="evolucion" class="py-24 px-6 md:px-12 lg:px-24 bg-brandSand text-center">
+        <div class="max-w-3xl mx-auto space-y-8">
+            <span class="text-xs tracking-[0.2em] uppercase text-brandGold font-semibold">¿Por qué este cambio?</span>
+            <h2 class="font-serif text-3xl md:text-5xl tracking-wide text-brandOlive leading-tight">
+                Una Marca Paraguas Atemporal
+            </h2>
+            <div class="w-16 h-[1px] bg-brandGold mx-auto"></div>
+            <div class="space-y-6 text-sm md:text-base text-brandOlive/80 font-light leading-relaxed max-w-2xl mx-auto">
+                <p>
+                    Hoy, nuestro universo evoluciona hacia una vivencia integral de la salud donde conviven en armonía el movimiento, la nutrición inteligente y los cuidados del cuerpo. Ante esta expansión, surge la necesidad de consolidar a <strong>Kairos Preserve</strong> como una gran marca paraguas capaz de cobijar diferentes experiencias bajo una sola identidad.
+                </p>
+                <p>
+                    La fuerza y el rigor geométrico del logotipo original enfocado puramente en el alto rendimiento deportivo debían transformarse. Necesitábamos una firma visual flexible que no solo hable de deporte, sino que también arrope con absoluta naturalidad la comida saludable, la paz de un spa y cualquier proyecto que la marca decida incorporar en el futuro, como líneas de ropa, mercancía exclusiva o su propia gama de suplementos.
+                </p>
+                <p>
+                    Suavizar la estructura de la letra <strong>K</strong> nos permite lograr esa versatilidad. Con trazos curvos y orgánicos creamos una identidad amable y sumamente flexible que transmite cuidado y calidad premium sin importar el producto o servicio que decida sumar el ecosistema en el mañana.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Logotipos (Selector dinámico) -->
+    <section id="propuestas" class="py-24 px-6 md:px-12 lg:px-24 bg-brandIvory">
+        <div class="max-w-5xl mx-auto text-center mb-16">
+            <span class="text-[10px] tracking-[0.25em] uppercase text-brandGold font-semibold mb-3 block">Dirección Creativa</span>
+            <h2 class="font-serif text-3xl md:text-5xl tracking-widest text-brandOlive mb-4">Opciones de Logotipo</h2>
+            <p class="text-xs md:text-sm text-brandOlive/60 max-w-xl mx-auto font-light leading-relaxed">
+                Compara a continuación las dos vertientes creativas desarrolladas para el ecosistema de la marca.
+            </p>
+            
+            <!-- Selector de Logo -->
+            <div class="flex justify-center space-x-3 mt-8">
+                <button onclick="switchLogo(1)" id="btn-logo1" class="px-5 py-2.5 text-[10px] uppercase tracking-widest border border-brandOlive bg-brandOlive text-brandIvory transition-all duration-300 rounded-full font-medium">
+                    Opción 1: K Orgánica (Hojas)
+                </button>
+                <button onclick="switchLogo(2)" id="btn-logo2" class="px-5 py-2.5 text-[10px] uppercase tracking-widest border border-brandOlive/30 text-brandOlive hover:border-brandOlive transition-all duration-300 rounded-full font-medium">
+                    Opción 2: Evolución Geométrica
+                </button>
+            </div>
+        </div>
+
+        <!-- Contenedor de Propuestas de Logo -->
+        <div class="max-w-5xl mx-auto border border-brandSand bg-brandIvory rounded-2xl p-8 md:p-12 shadow-sm relative min-h-[480px]">
+            
+            <!-- Opción 1: Logo K Orgánica -->
+            <div id="logo-option-1" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center fade-in">
+                <div class="lg:col-span-6 flex flex-col justify-center items-center bg-brandSand/50 p-10 rounded-xl border border-brandSand/30">
+                    <div class="flex flex-col items-center space-y-6">
+                        <!-- Imagen real del Logotipo de la Propuesta 1 (Recurso 5mks.png) -->
+                        <img src="https://i.postimg.cc/ry3B9cG5/Recurso-5mks.png" alt="Kairos Preserve Logo Opción 1" class="w-64 h-auto object-contain">
+                    </div>
+                </div>
+                <div class="lg:col-span-6 space-y-5">
+                    <span class="text-[10px] tracking-[0.2em] uppercase text-brandGold font-semibold">Propuesta Principal (Evolución Natural)</span>
+                    <h3 class="font-serif text-2xl text-brandOlive">La Simetría de la Naturaleza</h3>
+                    <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                        Esta propuesta toma la letra <strong>K</strong> original y suaviza su estructura. Los brazos ahora representan dos hojas orgánicas que nacen del tallo principal, aportando calma visual y delicadeza.
+                    </p>
+                    <ul class="text-[11px] text-brandOlive/75 space-y-3 font-light">
+                        <li class="flex items-start">
+                            <span class="w-1.5 h-1.5 bg-brandGold rounded-full mr-3 mt-1.5 flex-shrink-0"></span>
+                            <span>Mantiene la herencia de la letra K para no perder el reconocimiento de la comunidad.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-1.5 h-1.5 bg-brandGold rounded-full mr-3 mt-1.5 flex-shrink-0"></span>
+                            <span>Aporta una estética botánica ideal para tratamientos de Spa y cosméticos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-1.5 h-1.5 bg-brandGold rounded-full mr-3 mt-1.5 flex-shrink-0"></span>
+                            <span>La separación amplia de las letras (espaciado) transmite lujo silencioso y tranquilidad.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Opción 2: Logo Evolución Alternativa (Oculto por defecto) -->
+            <div id="logo-option-2" class="hidden grid grid-cols-1 lg:grid-cols-12 gap-12 items-center fade-in">
+                <div class="lg:col-span-6 flex flex-col justify-center items-center bg-brandSand/50 p-10 rounded-xl border border-brandSand/30">
+                    <div class="flex flex-col items-center space-y-6">
+                        <!-- Imagen real del Logotipo de la Propuesta 2 (Recurso 6mks.png) -->
+                        <img src="https://i.postimg.cc/BnVHjYfH/Recurso-6mks.png" alt="Kairos Preserve Logo Opción 2" class="w-64 h-auto object-contain">
+                    </div>
+                </div>
+                <div class="lg:col-span-6 space-y-5">
+                    <span class="text-[10px] tracking-[0.2em] uppercase text-brandGold font-semibold">Propuesta Secundaria (Evolución Geométrica)</span>
+                    <h3 class="font-serif text-2xl text-brandOlive">Estructura Simple & Depurada</h3>
+                    <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                        Esta opción plantea una transición directa y respetuosa con la herencia de <strong>Kairos Sport</strong>. Conserva la simetría y la fuerza de las líneas rectas originales, simplificándolas para que convivan en armonía con el nuevo universo de marca.
+                    </p>
+                    <ul class="text-[11px] text-brandOlive/75 space-y-3 font-light">
+                        <li class="flex items-start">
+                            <span class="w-1.5 h-1.5 bg-brandGold rounded-full mr-3 mt-1.5 flex-shrink-0"></span>
+                            <span>Mantiene la esencia original, logrando un reconocimiento inmediato por parte de la comunidad.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-1.5 h-1.5 bg-brandGold rounded-full mr-3 mt-1.5 flex-shrink-0"></span>
+                            <span>Trazos más limpios que mejoran sustancialmente la legibilidad en pantallas digitales y papelería física.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-1.5 h-1.5 bg-brandGold rounded-full mr-3 mt-1.5 flex-shrink-0"></span>
+                            <span>Un puente perfecto entre el alto rendimiento físico y la sobriedad del lujo silencioso.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Galería de Mockups Interactiva -->
+    <section id="aplicaciones" class="py-24 px-6 md:px-12 lg:px-24 bg-brandSand">
+        <div class="max-w-6xl mx-auto mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div>
+                <span class="text-[10px] tracking-[0.2em] uppercase text-brandGold font-semibold mb-3 block font-sans">Visualizador de Marca</span>
+                <h2 class="font-serif text-3xl md:text-5xl tracking-widest text-brandOlive">El Universo de Marca</h2>
+            </div>
+            <!-- Botón Selector de Colección (Set 1 vs Set 2) -->
+            <div class="bg-brandIvory/80 p-1 rounded-full border border-brandOlive/10 flex space-x-1 shadow-sm">
+                <button onclick="switchCollection(1)" id="btn-col-1" class="px-4 py-2 text-[10px] uppercase tracking-widest rounded-full font-medium transition-all duration-300 bg-brandOlive text-brandIvory">
+                    Set Logo 1 (Orgánico)
+                </button>
+                <button onclick="switchCollection(2)" id="btn-col-2" class="px-4 py-2 text-[10px] uppercase tracking-widest rounded-full font-medium transition-all duration-300 text-brandOlive hover:bg-brandSand/60">
+                    Set Logo 2 (Geométrico)
+                </button>
+            </div>
+        </div>
+
+        <!-- ==================== COLECCIÓN 1 (LOGO 1 - 7 SLIDES REESCRITOS) ==================== -->
+        <div id="collection-1-container" class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Sidebar Selector de Diapositivas Colección 1 -->
+            <div class="lg:col-span-4 flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible no-scrollbar space-x-2 lg:space-x-0 lg:space-y-2 pb-4 lg:pb-0">
+                
+                <button onclick="showSlide(1, 1)" id="col1-nav-1" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-xl bg-brandIvory border border-brandOlive text-brandOlive transition-all duration-300">
+                    <span class="text-[9px] tracking-widest uppercase block text-brandGold font-bold mb-1">01 • Hidratación</span>
+                    <span class="text-xs font-semibold block">Botella & Esterilla de Suelo</span>
+                </button>
+                
+                <button onclick="showSlide(2, 1)" id="col1-nav-2" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-xl bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                    <span class="text-[9px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">02 • Diario</span>
+                    <span class="text-xs font-semibold block">Libreta & Matcha</span>
+                </button>
+                
+                <button onclick="showSlide(3, 1)" id="col1-nav-3" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-xl bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                    <span class="text-[9px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">03 • Entorno</span>
+                    <span class="text-xs font-semibold block">Toma de Campaña Editorial</span>
+                </button>
+                
+                <button onclick="showSlide(4, 1)" id="col1-nav-4" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-xl bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                    <span class="text-[9px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">04 • Servicio</span>
+                    <span class="text-xs font-semibold block">Bowl de Desayuno</span>
+                </button>
+                
+                <button onclick="showSlide(5, 1)" id="col1-nav-5" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-xl bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                    <span class="text-[9px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">05 • Nutrición</span>
+                    <span class="text-xs font-semibold block">Jugo Prensado en Frío</span>
+                </button>
+                
+                <button onclick="showSlide(6, 1)" id="col1-nav-6" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-xl bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                    <span class="text-[9px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">06 • Packaging</span>
+                    <span class="text-xs font-semibold block">Caja de Envío Premium</span>
+                </button>
+                
+                <button onclick="showSlide(7, 1)" id="col1-nav-7" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-xl bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                    <span class="text-[9px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">07 • Detalle</span>
+                    <span class="text-xs font-semibold block">Plano de Detalle Macro</span>
+                </button>
+
+            </div>
+
+            <!-- Panel de Visualización Colección 1 -->
+            <div class="lg:col-span-8 bg-brandIvory rounded-2xl border border-brandSand p-6 md:p-8 flex flex-col justify-between min-h-[640px] shadow-sm relative overflow-hidden">
+                
+                <!-- Slide 1-1 (image_e8c789.jpg Corregida) -->
+                <div id="col1-content-1" class="space-y-6 fade-in">
+                    <div class="aspect-video w-full bg-brandSand rounded-xl flex items-center justify-center border border-brandSand/60 relative overflow-hidden shadow-inner">
+                        <img src="https://i.postimg.cc/Dz04FqW2/PILATES-GREE.png" alt="Botella Térmica y Esterilla de Ejercicio" class="absolute inset-0 w-full h-full object-cover img-transition">
+                        <!-- Flechas -->
+                        <button onclick="prevSlide(1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="nextSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center text-[10px] tracking-widest uppercase text-brandGold font-semibold">
+                            <span>Lente: 50mm, f/2.2</span>
+                            <span>Hidratación & Accesorios</span>
+                        </div>
+                        <h3 class="font-serif text-2xl text-brandOlive">Botella Deportiva & Esterilla</h3>
+                        <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                            Una botella de agua de acero inoxidable y una esterilla enrollada descansan sobre el suelo de roble junto a la cama de pilates. El logotipo de la K orgánica se graba de forma limpia, evidenciando cómo la identidad de Kairos Preserve convive pacíficamente con la práctica física.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 1-2 -->
+                <div id="col1-content-2" class="space-y-6 hidden fade-in">
+                    <div class="aspect-video w-full bg-brandSand rounded-xl flex items-center justify-center border border-brandSand/60 relative overflow-hidden shadow-inner">
+                        <img src="https://i.postimg.cc/FKzkmjfh/NOTEBOOCK-MATCHA.png" alt="Libreta & Matcha" class="absolute inset-0 w-full h-full object-cover img-transition">
+                        <!-- Flechas -->
+                        <button onclick="prevSlide(1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="nextSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center text-[10px] tracking-widest uppercase text-brandGold font-semibold">
+                            <span>Lente: 35mm, f/2.8</span>
+                            <span>Barra de Matcha & Bienestar</span>
+                        </div>
+                        <h3 class="font-serif text-2xl text-brandOlive">Libreta de Notas & Copa de Matcha</h3>
+                        <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                            Muestra de la identidad impresa en papelería rústica y piezas de vajilla. El logo de la K orgánica se aplica con total naturalidad para los momentos de descanso, nutrición y planificación del club.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 1-3 -->
+                <div id="col1-content-3" class="space-y-6 hidden fade-in">
+                    <div class="aspect-video w-full bg-brandSand rounded-xl flex items-center justify-center border border-brandSand/60 relative overflow-hidden shadow-inner">
+                        <img src="https://i.postimg.cc/0NjKxp6x/LIFESTILE-SHOT.png" alt="Estilo de Vida Campaña" class="absolute inset-0 w-full h-full object-cover img-transition">
+                        <!-- Flechas -->
+                        <button onclick="prevSlide(1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="nextSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center text-[10px] tracking-widest uppercase text-brandGold font-semibold">
+                            <span>Lente: 35mm, f/2.4</span>
+                            <span>Estilo de Vida & Campaña</span>
+                        </div>
+                        <h3 class="font-serif text-2xl text-brandOlive">Toma de Campaña Editorial</h3>
+                        <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                            Ejemplo de integración visual de la marca en un entorno arquitectónico de piedra y vegetación. Demuestra cómo la identidad se adapta al aire libre y a los espacios físicos de alta gama de la propuesta.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 1-4 -->
+                <div id="col1-content-4" class="space-y-6 hidden fade-in">
+                    <div class="aspect-video w-full bg-brandSand rounded-xl flex items-center justify-center border border-brandSand/60 relative overflow-hidden shadow-inner">
+                        <img src="https://i.postimg.cc/d03Zv87F/FOOD.png" alt="Alimentación Consciente Bowl" class="absolute inset-0 w-full h-full object-cover img-transition">
+                        <!-- Flechas -->
+                        <button onclick="prevSlide(1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="nextSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center text-[10px] tracking-widest uppercase text-brandGold font-semibold">
+                            <span>Lente: 50mm, f/2.8</span>
+                            <span>Nutrición Consciente</span>
+                        </div>
+                        <h3 class="font-serif text-2xl text-brandOlive">Bowl de Alimentos Saludables</h3>
+                        <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                            Aplicación del logotipo tipográfico en vajilla de cerámica para el servicio de cocina saludable. Muestra cómo la marca acompaña la experiencia diaria de nutrición con absoluta sobriedad y elegancia.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 1-5 -->
+                <div id="col1-content-5" class="space-y-6 hidden fade-in">
+                    <div class="aspect-video w-full bg-brandSand rounded-xl flex items-center justify-center border border-brandSand/60 relative overflow-hidden shadow-inner">
+                        <img src="https://i.postimg.cc/BvbPsx8G/DRINKS-BACK.png" alt="Jugo Verde Prensado" class="absolute inset-0 w-full h-full object-cover img-transition">
+                        <!-- Flechas -->
+                        <button onclick="prevSlide(1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="nextSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center text-[10px] tracking-widest uppercase text-brandGold font-semibold">
+                            <span>Lente: 85mm, f/2.2</span>
+                            <span>Bebidas Saludables</span>
+                        </div>
+                        <h3 class="font-serif text-2xl text-brandOlive">Etiquetado de Jugos Naturales</h3>
+                        <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                            Etiqueta minimalista con la marca sobre botellas de vidrio. El logo actúa como una firma de calidad y origen en los productos de nutrición del mercado saludable de Kairos Preserve.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 1-6 -->
+                <div id="col1-content-6" class="space-y-6 hidden fade-in">
+                    <div class="aspect-video w-full bg-brandSand rounded-xl flex items-center justify-center border border-brandSand/60 relative overflow-hidden shadow-inner">
+                        <img src="https://i.postimg.cc/Dz04FqSH/CINEMATIC-BACK-BOX.png" alt="Packaging de Envío Premium" class="absolute inset-0 w-full h-full object-cover img-transition">
+                        <!-- Flechas -->
+                        <button onclick="prevSlide(1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="nextSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center text-[10px] tracking-widest uppercase text-brandGold font-semibold">
+                            <span>Lente: 35mm, f/2.8</span>
+                            <span>Cajas de Envío & Packaging</span>
+                        </div>
+                        <h3 class="font-serif text-2xl text-brandOlive">Embalaje de Envío Premium</h3>
+                        <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                            Logotipo estampado en dorado mate sobre cajas de embalaje premium de color verde oliva. Muestra la sofisticación de la marca en sus empaques y sistemas de entrega física.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 1-7 -->
+                <div id="col1-content-7" class="space-y-6 hidden fade-in">
+                    <div class="aspect-video w-full bg-brandSand rounded-xl flex items-center justify-center border border-brandSand/60 relative overflow-hidden shadow-inner">
+                        <img src="https://i.postimg.cc/BvbPsx80/EXTREME-CLOSE-UP.png" alt="Primer Plano del Isotipo" class="absolute inset-0 w-full h-full object-cover img-transition">
+                        <!-- Flechas -->
+                        <button onclick="prevSlide(1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="nextSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center text-[10px] tracking-widest uppercase text-brandGold font-semibold">
+                            <span>Lente: 100mm Macro, f/1.8</span>
+                            <span>Detalle de Identidad</span>
+                        </div>
+                        <h3 class="font-serif text-2xl text-brandOlive">Plano Macro del Isotipo</h3>
+                        <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                            Vista de primer plano cerrado que expone el equilibrio, legibilidad y precisión visual del isotipo orgánico en relieve sobre materiales de alta calidad física.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Footer del Slider Colección 1 -->
+                <div class="border-t border-brandSand/60 pt-4 mt-6 flex justify-between items-center text-[10px] text-brandOlive/40 font-light">
+                    <span>Imágenes cargadas vía CDN de Postimages</span>
+                    <span class="hidden md:inline">Perfecto para despliegue en GitHub Pages</span>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- ==================== COLECCIÓN 2 (LOGO 2 - GEOMÉTRICO - 5 SLIDES REESCRITOS) ==================== -->
+        <div id="collection-2-container" class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 hidden">
+            <!-- Sidebar Selector de Diapositivas Colección 2 -->
+            <div class="lg:col-span-4 flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible no-scrollbar space-x-2 lg:space-x-0 lg:space-y-2 pb-4 lg:pb-0">
+                
+                <button onclick="showSlide(1, 2)" id="col2-nav-1" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-xl bg-brandIvory border border-brandOlive text-brandOlive transition-all duration-300">
+                    <span class="text-[9px] tracking-widest uppercase block text-brandGold font-bold mb-1">01 • Activewear</span>
+                    <span class="text-xs font-semibold block">Prendas de Pilates</span>
+                </button>
+                
+                <button onclick="showSlide(2, 2)" id="col2-nav-2" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-xl bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                    <span class="text-[9px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">02 • Merch</span>
+                    <span class="text-xs font-semibold block">Sudadera Casual</span>
+                </button>
+                
+                <button onclick="showSlide(3, 2)" id="col2-nav-3" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-xl bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                    <span class="text-[9px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">03 • Headwear</span>
+                    <span class="text-xs font-semibold block">Gorra Clásica</span>
+                </button>
+                
+                <button onclick="showSlide(4, 2)" id="col2-nav-4" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-xl bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                    <span class="text-[9px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">04 • Bienestar</span>
+                    <span class="text-xs font-semibold block">Vela Aromática de Spa</span>
+                </button>
+                
+                <button onclick="showSlide(5, 2)" id="col2-nav-5" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-xl bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                    <span class="text-[9px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">05 • Accesorios</span>
+                    <span class="text-xs font-semibold block">Mezclador & Calcetines</span>
+                </button>
+
+            </div>
+
+            <!-- Panel de Visualización Colección 2 -->
+            <div class="lg:col-span-8 bg-brandIvory rounded-2xl border border-brandSand p-6 md:p-8 flex flex-col justify-between min-h-[640px] shadow-sm relative overflow-hidden">
+                
+                <!-- Slide 2-1 -->
+                <div id="col2-content-1" class="space-y-6 fade-in">
+                    <div class="aspect-video w-full bg-brandSand rounded-xl flex items-center justify-center border border-brandSand/60 relative overflow-hidden shadow-inner">
+                        <img src="https://i.postimg.cc/d1vxftNq/BACK.png" alt="Activewear Set Pilates" class="absolute inset-0 w-full h-full object-cover img-transition">
+                        <!-- Flechas -->
+                        <button onclick="prevSlide(2)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="nextSlide(2)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center text-[10px] tracking-widest uppercase text-brandGold font-semibold">
+                            <span>Lente: 50mm, f/2.2</span>
+                            <span>Activewear de Pilates</span>
+                        </div>
+                        <h3 class="font-serif text-2xl text-brandOlive">Prendas de Entrenamiento</h3>
+                        <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                            La propuesta de logotipo tipográfico aplicada sobre prendas deportivas. Su estructura limpia y geométrica aporta un carácter de modernidad y sofisticación inmediata a la indumentaria de pilates.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 2-2 -->
+                <div id="col2-content-2" class="space-y-6 hidden fade-in">
+                    <div class="aspect-video w-full bg-brandSand rounded-xl flex items-center justify-center border border-brandSand/60 relative overflow-hidden shadow-inner">
+                        <img src="https://i.postimg.cc/3R7cqJf7/MERSH.png" alt="Sudadera Oversize Marfil" class="absolute inset-0 w-full h-full object-cover img-transition">
+                        <!-- Flechas -->
+                        <button onclick="prevSlide(2)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="nextSlide(2)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center text-[10px] tracking-widest uppercase text-brandGold font-semibold">
+                            <span>Lente: 35mm, f/2.8</span>
+                            <span>Streetwear Merch</span>
+                        </div>
+                        <h3 class="font-serif text-2xl text-brandOlive">Sudadera Casual de Algodón</h3>
+                        <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                            Bordado limpio sobre prendas de uso cotidiano. El logotipo actúa como una firma discreta en el pecho, demostrando la versatilidad de la propuesta geométrica en la línea de mercancía oficial de la marca.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 2-3 -->
+                <div id="col2-content-3" class="space-y-6 hidden fade-in">
+                    <div class="aspect-video w-full bg-brandSand rounded-xl flex items-center justify-center border border-brandSand/60 relative overflow-hidden shadow-inner">
+                        <img src="https://i.postimg.cc/DZFMNypn/HAT.png" alt="Gorra Deep Olive" class="absolute inset-0 w-full h-full object-cover img-transition">
+                        <!-- Flechas -->
+                        <button onclick="prevSlide(2)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="nextSlide(2)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center text-[10px] tracking-widest uppercase text-brandGold font-semibold">
+                            <span>Lente: 85mm, f/1.8</span>
+                            <span>Premium Headwear</span>
+                        </div>
+                        <h3 class="font-serif text-2xl text-brandOlive">Gorra de Algodón Clásica</h3>
+                        <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                            Bordado tonal centrado sobre accesorios textiles deportivos. Muestra cómo la propuesta mantiene su legibilidad y equilibrio visual en soportes de uso diario fuera del club.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 2-4 -->
+                <div id="col2-content-4" class="space-y-6 hidden fade-in">
+                    <div class="aspect-video w-full bg-brandSand rounded-xl flex items-center justify-center border border-brandSand/60 relative overflow-hidden shadow-inner">
+                        <img src="https://i.postimg.cc/k49pHXY4/VELA.png" alt="Albornoz & Vela de Spa" class="absolute inset-0 w-full h-full object-cover img-transition">
+                        <!-- Flechas -->
+                        <button onclick="prevSlide(2)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="nextSlide(2)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center text-[10px] tracking-widest uppercase text-brandGold font-semibold">
+                            <span>Lente: 50mm, f/2.5</span>
+                            <span>Spa & Longevity Merch</span>
+                        </div>
+                        <h3 class="font-serif text-2xl text-brandOlive">Vela Aromática de Spa</h3>
+                        <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                            Etiquetado minimalista del logotipo de la Propuesta 2 sobre envases de vidrio esmerilado, reflejando sobriedad y aportando la atmósfera de paz y relajación que exige la línea de bienestar.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 2-5 -->
+                <div id="col2-content-5" class="space-y-6 hidden fade-in">
+                    <div class="aspect-video w-full bg-brandSand rounded-xl flex items-center justify-center border border-brandSand/60 relative overflow-hidden shadow-inner">
+                        <img src="https://i.postimg.cc/xCY4ZTp9/SHACKER.png" alt="Shaker de Acero & Calcetines" class="absolute inset-0 w-full h-full object-cover img-transition">
+                        <!-- Flechas -->
+                        <button onclick="prevSlide(2)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="nextSlide(2)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-brandIvory/80 hover:bg-brandOlive hover:text-brandIvory text-brandOlive p-2.5 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 z-10 focus:outline-none">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center text-[10px] tracking-widest uppercase text-brandGold font-semibold">
+                            <span>Lente: 85mm, f/2.2</span>
+                            <span>Wellness Accessories</span>
+                        </div>
+                        <h3 class="font-serif text-2xl text-brandOlive">Botella Mezcladora & Accesorios</h3>
+                        <p class="text-xs md:text-sm text-brandOlive/80 font-light leading-relaxed">
+                            Grabado láser minimalista sobre botellas deportivas de acero mate y estampación de accesorios. Muestra la gran adaptabilidad técnica de la Propuesta 2 en cualquier superficie rígida o flexible.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Footer del Slider Colección 2 -->
+                <div class="border-t border-brandSand/60 pt-4 mt-6 flex justify-between items-center text-[10px] text-brandOlive/40 font-light">
+                    <span>Estructura local sugerida: <code class="bg-brandSand px-1 rounded font-mono text-[10px]">./assets/img/</code></span>
+                    <span class="hidden md:inline">Perfecto para visualización directa</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Aviso Legal / Disclaimer -->
+    <section class="py-12 px-6 md:px-12 lg:px-24 bg-brandSand/30 border-t border-brandSand">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <span class="text-[9px] tracking-[0.3em] uppercase text-brandGold font-bold">Nota Aclaratoria de Diseño</span>
+            <p class="text-[11px] md:text-xs text-brandOlive/60 font-light leading-relaxed max-w-2xl mx-auto">
+                Los elementos, prendas, accesorios y envases que se muestran en estas imágenes son representaciones puramente conceptuales (mockups). Su único propósito es evidenciar de manera práctica e ilustrativa cómo funcionan e interactúan las propuestas de logotipo en el entorno cotidiano de la marca. No constituyen de ninguna manera diseños de producto finales ni propuestas comerciales de artículos terminados.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer General -->
+    <footer class="bg-brandOlive text-brandIvory py-16 px-6 text-center border-t border-brandOlive/20">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <h3 class="font-serif text-2xl tracking-[0.2em] uppercase">KAIROS PRESERVE</h3>
+            <p class="text-xs tracking-widest text-brandIvory/60 max-w-md mx-auto leading-relaxed">
+                Nourish Today. Preserve Tomorrow.<br>
+                Propuesta de Identidad y Dirección de Arte.
+            </p>
+            <div class="pt-8 border-t border-brandIvory/10 text-[10px] text-brandIvory/40 tracking-wider">
+                &copy; 2026 Kairos Preserve. Diseñado para integración de Repositorios en GitHub Pages.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lógica de Control de Diapositivas, Selector de Logo y Colección -->
+    <script>
+        // Variables de estado independientes para cada colección
+        let currentSlideCol1 = 1;
+        let currentSlideCol2 = 1;
+        
+        // Número de slides real para cada colección
+        const totalSlidesCol1 = 7;
+        const totalSlidesCol2 = 5; 
+        
+        let activeCollection = 1; // 1 = Logo 1 (Orgánico), 2 = Logo 2 (Geométrico)
+
+        function showSlide(index, colNum) {
+            // Actualizar la variable de estado correspondiente
+            if (colNum === 1) {
+                currentSlideCol1 = index;
+                const total = totalSlidesCol1;
+                
+                // Ocultar y desactivar slides para Colección 1
+                for (let i = 1; i <= total; i++) {
+                    document.getElementById(`col1-content-${i}`).classList.add('hidden');
+                    
+                    let navBtn = document.getElementById(`col1-nav-${i}`);
+                    navBtn.classList.remove('bg-brandIvory', 'border-brandOlive', 'text-brandOlive');
+                    navBtn.classList.add('bg-transparent', 'border-brandOlive/20', 'text-brandOlive/70', 'hover:bg-brandIvory/50');
+                    
+                    let badgeText = navBtn.querySelector('span:first-child');
+                    badgeText.classList.remove('text-brandGold');
+                    badgeText.classList.add('text-brandOlive/40');
+                }
+                
+                // Mostrar slide activa
+                document.getElementById(`col1-content-${index}`).classList.remove('hidden');
+                
+                // Activar botón de navegación
+                let activeBtn = document.getElementById(`col1-nav-${index}`);
+                activeBtn.classList.remove('bg-transparent', 'border-brandOlive/20', 'text-brandOlive/70', 'hover:bg-brandIvory/50');
+                activeBtn.classList.add('bg-brandIvory', 'border-brandOlive', 'text-brandOlive');
+                
+                let activeBadge = activeBtn.querySelector('span:first-child');
+                activeBadge.classList.remove('text-brandOlive/40');
+                activeBadge.classList.add('text-brandGold');
+                
+            } else {
+                currentSlideCol2 = index;
+                const total = totalSlidesCol2;
+                
+                // Ocultar y desactivar slides para Colección 2
+                for (let i = 1; i <= total; i++) {
+                    document.getElementById(`col2-content-${i}`).classList.add('hidden');
+                    
+                    let navBtn = document.getElementById(`col2-nav-${i}`);
+                    navBtn.classList.remove('bg-brandIvory', 'border-brandOlive', 'text-brandOlive');
+                    navBtn.classList.add('bg-transparent', 'border-brandOlive/20', 'text-brandOlive/70', 'hover:bg-brandIvory/50');
+                    
+                    let badgeText = navBtn.querySelector('span:first-child');
+                    badgeText.classList.remove('text-brandGold');
+                    badgeText.classList.add('text-brandOlive/40');
+                }
+                
+                // Mostrar slide activa
+                document.getElementById(`col2-content-${index}`).classList.remove('hidden');
+                
+                // Activar botón de navegación
+                let activeBtn = document.getElementById(`col2-nav-${index}`);
+                activeBtn.classList.remove('bg-transparent', 'border-brandOlive/20', 'text-brandOlive/70', 'hover:bg-brandIvory/50');
+                activeBtn.classList.add('bg-brandIvory', 'border-brandOlive', 'text-brandOlive');
+                
+                let activeBadge = activeBtn.querySelector('span:first-child');
+                activeBadge.classList.remove('text-brandOlive/40');
+                activeBadge.classList.add('text-brandGold');
+            }
+        }
+
+        // Navegación lateral mediante flechas
+        function nextSlide(colNum) {
+            if (colNum === 1) {
+                let next = currentSlideCol1 + 1;
+                if (next > totalSlidesCol1) next = 1;
+                showSlide(next, 1);
+            } else {
+                let next = currentSlideCol2 + 1;
+                if (next > totalSlidesCol2) next = 1;
+                showSlide(next, 2);
+            }
+        }
+
+        function prevSlide(colNum) {
+            if (colNum === 1) {
+                let prev = currentSlideCol1 - 1;
+                if (prev < 1) prev = totalSlidesCol1;
+                showSlide(prev, 1);
+            } else {
+                let prev = currentSlideCol2 - 1;
+                if (prev < 1) prev = totalSlidesCol2;
+                showSlide(prev, 2);
+            }
+        }
+
+        // Cambio de logo principal
+        function switchLogo(option) {
+            let logo1 = document.getElementById('logo-option-1');
+            let logo2 = document.getElementById('logo-option-2');
+            let btn1 = document.getElementById('btn-logo1');
+            let btn2 = document.getElementById('btn-logo2');
+
+            if (option === 1) {
+                logo1.classList.remove('hidden');
+                logo2.classList.add('hidden');
+                btn1.className = "px-5 py-2.5 text-[10px] uppercase tracking-widest border border-brandOlive bg-brandOlive text-brandIvory transition-all duration-300 rounded-full font-medium";
+                btn2.className = "px-5 py-2.5 text-[10px] uppercase tracking-widest border border-brandOlive/30 text-brandOlive hover:border-brandOlive transition-all duration-300 rounded-full font-medium";
+            } else {
+                logo1.classList.add('hidden');
+                logo2.classList.remove('hidden');
+                btn1.className = "px-5 py-2.5 text-[10px] uppercase tracking-widest border border-brandOlive/30 text-brandOlive hover:border-brandOlive transition-all duration-300 rounded-full font-medium";
+                btn2.className = "px-5 py-2.5 text-[10px] uppercase tracking-widest border border-brandOlive bg-brandOlive text-brandIvory transition-all duration-300 rounded-full font-medium";
+            }
+        }
+
+        // Cambio de Colección de Mockups (Set 1 vs Set 2)
+        function switchCollection(colNum) {
+            activeCollection = colNum;
+            let container1 = document.getElementById('collection-1-container');
+            let container2 = document.getElementById('collection-2-container');
+            let btn1 = document.getElementById('btn-col-1');
+            let btn2 = document.getElementById('btn-col-2');
+
+            if (colNum === 1) {
+                container1.classList.remove('hidden');
+                container2.classList.add('hidden');
+                btn1.className = "px-4 py-2 text-[10px] uppercase tracking-widest rounded-full font-medium transition-all duration-300 bg-brandOlive text-brandIvory";
+                btn2.className = "px-4 py-2 text-[10px] uppercase tracking-widest rounded-full font-medium transition-all duration-300 text-brandOlive hover:bg-brandSand/60";
+            } else {
+                container1.classList.add('hidden');
+                container2.classList.remove('hidden');
+                btn1.className = "px-4 py-2 text-[10px] uppercase tracking-widest rounded-full font-medium transition-all duration-300 text-brandOlive hover:bg-brandSand/60";
+                btn2.className = "px-4 py-2 text-[10px] uppercase tracking-widest rounded-full font-medium transition-all duration-300 bg-brandOlive text-brandIvory";
+            }
+        }
+    </script>
+</body>
+</html>
