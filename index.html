@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="es" class="smooth-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kairos Preserve - Propuesta de Identidad de Marca</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cinzel para títulos, Montserrat para lectura general -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandSand: '#F2EFE9',
+                        brandIvory: '#FDFBF7',
+                        brandSage: '#8FA08E',
+                        brandOlive: '#4E5B4B',
+                        brandWood: '#A88C6F',
+                        brandGold: '#C5A059',
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ocultar barra de scroll conservando funcionalidad */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-brandIvory text-brandOlive font-sans antialiased selection:bg-brandSage selection:text-white">
+
+    <!-- Header Premium Lineal -->
+    <header class="fixed top-0 left-0 w-full bg-brandIvory/95 backdrop-blur-md z-50 border-b border-brandSand px-4 sm:px-8 py-3.5 flex justify-between items-center">
+        <!-- Logotipo Oficial a la Izquierda -->
+        <div class="flex items-center">
+            <a href="#" class="transition-opacity hover:opacity-90">
+                <img src="https://i.postimg.cc/5NFcy5hp/Recurso-8mks.png" alt="Kairos Preserve" class="h-7 sm:h-10 w-auto object-contain">
+            </a>
+        </div>
+        
+        <!-- Navegación Dinámica a la Derecha -->
+        <div class="flex items-center gap-1.5 sm:gap-3">
+            <a href="#aplicaciones" class="border border-brandOlive text-brandOlive text-[8px] sm:text-[10px] tracking-widest uppercase px-2 sm:px-4 py-2.5 rounded-none hover:bg-brandOlive hover:text-brandIvory transition-all duration-300 whitespace-nowrap">
+                Ver Aplicaciones Fase 1
+            </a>
+            <a href="#fase2" class="border border-brandOlive text-brandOlive text-[8px] sm:text-[10px] tracking-widest uppercase px-2 sm:px-4 py-2.5 rounded-none hover:bg-brandOlive hover:text-brandIvory transition-all duration-300 whitespace-nowrap">
+                Ver Fase 2
+            </a>
+            <a href="#fase3" class="border border-brandOlive text-brandOlive text-[8px] sm:text-[10px] tracking-widest uppercase px-2 sm:px-4 py-2.5 rounded-none hover:bg-brandOlive hover:text-brandIvory transition-all duration-300 whitespace-nowrap">
+                Ver Fase 3
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24 relative bg-gradient-to-b from-brandIvory to-brandSand">
+        <div class="max-w-4xl fade-in z-10 space-y-8 my-auto pb-12 sm:pb-0">
+            <span class="text-xs tracking-[0.3em] uppercase text-brandGold font-semibold block">Dirección de Arte e Identidad</span>
+            <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-widest text-brandOlive leading-tight">
+                KAIROS PRESERVE
+            </h1>
+            <p class="text-xs sm:text-sm md:text-base text-brandOlive/80 max-w-2xl mx-auto font-light leading-relaxed">
+                Propuesta de evolución de marca: De la fuerza geométrica del entrenamiento al equilibrio natural del cuidado, la nutrición inteligente y la longevidad.
+            </p>
+            <div class="pt-4 flex justify-center">
+                <a href="#origen" class="border border-brandOlive text-brandOlive text-xs tracking-widest uppercase px-10 py-4 rounded-none hover:bg-brandOlive hover:text-brandIvory transition-all duration-300">
+                    Comenzar Análisis
+                </a>
+            </div>
+        </div>
+        
+        <!-- Indicador de Scroll -->
+        <div class="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-2">
+            <span class="text-[10px] tracking-widest uppercase text-brandOlive/60">Sigue bajando</span>
+            <div class="w-[1px] h-12 bg-brandOlive/30 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1/2 bg-brandGold animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 1: El Origen -->
+    <section id="origen" class="py-24 px-6 md:px-12 lg:px-24 bg-brandIvory relative border-b border-brandSand">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            
+            <!-- Columna de Texto -->
+            <div class="space-y-6">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-brandGold font-bold">01 / El Punto de Partida</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-widest text-brandOlive leading-tight">EL ORIGEN HISTÓRICO</h2>
+                <div class="w-12 h-[1px] bg-brandGold"></div>
+                <p class="text-xs md:text-sm leading-relaxed text-brandOlive/80 font-light">
+                    Nuestra base nace con <strong>Kairos Sport</strong>. Una identidad diseñada bajo el rigor de la geometría pura, líneas tensas y ángulos definidos que transmitían estabilidad, esfuerzo físico y el alto rendimiento atlético. 
+                </p>
+                <p class="text-xs md:text-sm leading-relaxed text-brandOlive/80 font-light">
+                    Esta estructura sólida y simétrica fue clave para posicionar el entrenamiento como pilar fundamental de nuestra comunidad.
+                </p>
+            </div>
+            
+            <!-- Columna del Logotipo Histórico Real -->
+            <div class="bg-brandSand/40 p-8 md:p-12 border border-brandSand flex justify-center items-center">
+                <div class="bg-brandIvory p-6 md:p-8 border border-brandSand/60 shadow-sm max-w-sm w-full transition-all hover:scale-[1.02] duration-500">
+                    <img src="https://i.postimg.cc/1XXyVHQy/Recurso-5m11ks.png" alt="Logotipo Kairos Sport" class="w-full h-auto object-contain mx-auto">
+                    <div class="mt-4 pt-4 border-t border-brandSand/80 text-center">
+                        <span class="text-[9px] tracking-widest uppercase text-brandOlive/60 font-semibold block">Identidad Anterior</span>
+                        <span class="text-[8px] tracking-wider text-brandGold block mt-1">Líneas Estructurales Rígidas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: La Evolución -->
+    <section class="py-24 px-6 md:px-12 lg:px-24 bg-brandSand/20 relative">
+        <div class="max-w-3xl mx-auto text-center space-y-8">
+            <span class="text-[10px] tracking-[0.2em] uppercase text-brandGold font-bold">02 / La Transición</span>
+            <h2 class="font-serif text-3xl md:text-4xl tracking-widest text-brandOlive">LA EVOLUCIÓN NATURAL</h2>
+            <div class="w-12 h-[1px] bg-brandGold mx-auto"></div>
+            
+            <p class="text-xs md:text-sm leading-relaxed text-brandOlive/80 font-light max-w-2xl mx-auto">
+                Hoy, nuestra propuesta se transforma en una vivencia integral de bienestar y longevidad, uniendo de forma equilibrada el deporte, la nutrición inteligente y el cuidado corporal. Para albergar esta expansión de servicios, **Kairos Preserve** nace como una marca paraguas flexible y unificadora.
+            </p>
+            
+            <p class="text-xs md:text-sm leading-relaxed text-brandOlive/80 font-light max-w-2xl mx-auto">
+                Esta nueva identidad corporativa está diseñada para trascender el ámbito deportivo clásico, adaptándose con absoluta coherencia a futuros productos de merchandising, empaques alimenticios, experiencias wellness y nuestra propia línea de suplementos nutricionales.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección 3: Las Opciones de Marca -->
+    <section class="py-24 px-6 md:px-12 lg:px-24 bg-brandIvory border-t border-brandSand">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-brandGold font-bold">03 / Dirección de Arte</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-widest text-brandOlive">PROPUESTAS DE MARCA</h2>
+                <div class="w-12 h-[1px] bg-brandGold mx-auto"></div>
+            </div>
+
+            <!-- Botones Selectores Simétricos -->
+            <div class="flex justify-center gap-4 mb-12">
+                <button id="btn-logo1" onclick="switchLogo(1)" class="px-6 py-2.5 text-xs uppercase tracking-widest border border-brandOlive bg-brandOlive text-brandIvory transition-all duration-300 rounded-none font-medium">
+                    Opción 1: K Orgánica
+                </button>
+                <button id="btn-logo2" onclick="switchLogo(2)" class="px-6 py-2.5 text-xs uppercase tracking-widest border border-brandOlive/30 text-brandOlive hover:border-brandOlive transition-all duration-300 rounded-none font-medium">
+                    Opción 2: Evolución Geométrica
+                </button>
+            </div>
+
+            <!-- Contenedor Único Simétrico de las Propuestas -->
+            <div class="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
+                
+                <!-- Propuesta 1 (Logo 1) -->
+                <div id="logo-option-1" class="bg-brandSand/25 p-8 sm:p-12 border border-brandSand/80 text-center space-y-6">
+                    <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block">Trazos Curvos y Orgánicos</span>
+                    
+                    <div class="bg-brandIvory p-10 max-w-sm mx-auto border border-brandSand shadow-sm">
+                        <img src="https://i.postimg.cc/zGZfGGcq/Recurso-5mks.png" alt="Propuesta K Orgánica" class="w-48 h-auto mx-auto object-contain">
+                    </div>
+                    
+                    <p class="text-xs text-brandOlive/70 max-w-md mx-auto leading-relaxed font-light">
+                        Curvas sutiles que rinden tributo a las formas de las hojas vegetales y la fluidez del agua. Un diseño que transmite tranquilidad mental, balance, elegancia orgánica y bienestar puro.
+                    </p>
+                </div>
+
+                <!-- Propuesta 2 (Logo 2) -->
+                <div id="logo-option-2" class="bg-brandSand/25 p-8 sm:p-12 border border-brandSand/80 text-center space-y-6 hidden">
+                    <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block">Refinamiento y Simetría</span>
+                    
+                    <div class="bg-brandIvory p-10 max-w-sm mx-auto border border-brandSand shadow-sm">
+                        <img src="https://i.postimg.cc/BnVHjYfH/Recurso-6mks.png" alt="Propuesta Evolución Geométrica" class="w-48 h-auto mx-auto object-contain">
+                    </div>
+                    
+                    <p class="text-xs text-brandOlive/70 max-w-md mx-auto leading-relaxed font-light">
+                        Una evolución directa de la rigidez de Kairos Sport hacia una estructura pulida de líneas equilibradas. Conserva la simetría y estabilidad histórica, pero con un trazo más limpio e integrado.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Aplicaciones / Visualización Contextual (Fase 1) -->
+    <section id="aplicaciones" class="py-24 px-4 sm:px-8 md:px-12 lg:px-24 bg-brandSand/10 border-t border-brandSand relative overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-brandGold font-bold">04 / Maquetas de Campaña</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-widest text-brandOlive">ENTORNO COLECTIVO</h2>
+                <div class="w-12 h-[1px] bg-brandGold mx-auto"></div>
+                <p class="text-xs text-brandOlive/60 max-w-md mx-auto font-light">
+                    Haz clic en los botones de abajo para cambiar las simulaciones del set de la Opción 1 o el set de la Opción 2.
+                </p>
+            </div>
+
+            <!-- Selector de Colección de Mockups (Set 1 vs Set 2) -->
+            <div class="flex justify-center mb-10 border-b border-brandSand max-w-md mx-auto">
+                <button id="btn-col1" onclick="toggleCollection(1)" class="px-4 py-2 text-[10px] uppercase tracking-widest font-semibold bg-brandOlive text-brandIvory transition-all duration-300 rounded-none">
+                    Set Logo 1: Orgánico
+                </button>
+                <button id="btn-col2" onclick="toggleCollection(2)" class="px-4 py-2 text-[10px] uppercase tracking-widest font-semibold text-brandOlive/60 hover:text-brandOlive transition-all duration-300 rounded-none">
+                    Set Logo 2: Geométrico
+                </button>
+            </div>
+
+            <!-- ================= COLOLECCIÓN 1 (6 SLIDES CON FOTOS REALES) ================= -->
+            <div id="collection-1-container" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Visualizador de Imagen (Lado Izquierdo) -->
+                <div class="lg:col-span-8 relative group bg-brandSand/30 p-2 border border-brandSand/60">
+                    
+                    <button onclick="prevSlideCol1()" class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brandIvory/80 hover:bg-brandIvory text-brandOlive border border-brandSand shadow-md flex items-center justify-center transition-all">
+                        &#10094;
+                    </button>
+                    <button onclick="nextSlideCol1()" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brandIvory/80 hover:bg-brandIvory text-brandOlive border border-brandSand shadow-md flex items-center justify-center transition-all">
+                        &#10095;
+                    </button>
+
+                    <!-- Slides de Imágenes de la Opción 1 -->
+                    <div id="col1-slide-1" class="fade-in">
+                        <img src="https://i.postimg.cc/0NNjLH3g/CINEMATIC-BACK-BOX.png" alt="Estructura y Recepción" class="w-full h-auto object-cover max-h-[500px]">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Mobiliario &amp; Recepción</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Muestra la elegancia y la escala del logotipo al asentarse sobre elementos estructurales en la entrada.</p>
+                        </div>
+                    </div>
+
+                    <div id="col1-slide-2" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/nLwrZG8R/LIFESTILE-SHOT.png" alt="Accesorios Deportivos" class="w-full h-auto object-cover max-h-[500px]">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Bolsa de Lona &amp; Accesorios</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Validación visual de la identidad aplicada sobre accesorios esenciales de uso cotidiano.</p>
+                        </div>
+                    </div>
+
+                    <div id="col1-slide-3" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/PqFJhQGV/NOTEBOOCK-MATCHA.png" alt="Papelería Corporativa" class="w-full h-auto object-cover max-h-[500px]">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Papelería Premium</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Refleja la sobriedad del logotipo sobre libretas corporativas y menús de barra.</p>
+                        </div>
+                    </div>
+
+                    <div id="col1-slide-4" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/cJJCV5jy/FOOD.png" alt="Línea de Ensaladas" class="w-full h-auto object-cover max-h-[500px]">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Empaques de Alimentación</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Comportamiento e impacto de los sellos y etiquetas sobre recipientes de comida consciente.</p>
+                        </div>
+                    </div>
+
+                    <div id="col1-slide-5" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/1zzXLYdk/DRINKS-BACK.png" alt="Línea de Bebidas" class="w-full h-auto object-cover max-h-[500px]">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Envasado de Líquidos</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Prueba de legibilidad del logotipo sobre botellas y recipientes de hidratación saludable.</p>
+                        </div>
+                    </div>
+
+                    <div id="col1-slide-6" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/PqqJBF7B/EXTREME-CLOSE-UP.png" alt="Detalle del Logotipo" class="w-full h-auto object-cover max-h-[500px]">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Plano Detalle de Bordados</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Visualización nítida y cercana de la excelencia que aporta el bordado del logotipo en textiles.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menú Lateral -->
+                <div class="lg:col-span-4 space-y-2 flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible no-scrollbar py-2 lg:py-0">
+                    <button id="col1-nav-1" onclick="showSlideCol1(1)" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-brandIvory border border-brandOlive text-brandOlive transition-all duration-300">
+                        <span class="text-[10px] tracking-widest uppercase block text-brandGold font-bold mb-1">Aplicación 01</span>
+                        <span class="text-xs font-semibold block">Mobiliario de Entrada</span>
+                    </button>
+                    <button id="col1-nav-2" onclick="showSlideCol1(2)" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                        <span class="text-[10px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">Aplicación 02</span>
+                        <span class="text-xs font-semibold block">Bolsa de Lona</span>
+                    </button>
+                    <button id="col1-nav-3" onclick="showSlideCol1(3)" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                        <span class="text-[10px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">Aplicación 03</span>
+                        <span class="text-xs font-semibold block">Papelería Premium</span>
+                    </button>
+                    <button id="col1-nav-4" onclick="showSlideCol1(4)" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                        <span class="text-[10px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">Aplicación 04</span>
+                        <span class="text-xs font-semibold block">Empaques de Comida</span>
+                    </button>
+                    <button id="col1-nav-5" onclick="showSlideCol1(5)" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                        <span class="text-[10px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">Aplicación 05</span>
+                        <span class="text-xs font-semibold block">Botellas de Bebidas</span>
+                    </button>
+                    <button id="col1-nav-6" onclick="showSlideCol1(6)" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                        <span class="text-[10px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">Aplicación 06</span>
+                        <span class="text-xs font-semibold block">Plano Detalle</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ================= COLOLECCIÓN 2 (5 SLIDES CON FOTOS REALES) ================= -->
+            <div id="collection-2-container" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center hidden">
+                
+                <!-- Visualizador de Imagen -->
+                <div class="lg:col-span-8 relative group bg-brandSand/30 p-2 border border-brandSand/60">
+                    
+                    <button onclick="prevSlideCol2()" class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brandIvory/80 hover:bg-brandIvory text-brandOlive border border-brandSand shadow-md flex items-center justify-center transition-all">
+                        &#10094;
+                    </button>
+                    <button onclick="nextSlideCol2()" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brandIvory/80 hover:bg-brandIvory text-brandOlive border border-brandSand shadow-md flex items-center justify-center transition-all">
+                        &#10095;
+                    </button>
+
+                    <!-- Slides de la Opción 2 -->
+                    <div id="col2-slide-1" class="fade-in">
+                        <img src="https://i.postimg.cc/d1vxftNq/BACK.png" alt="Prendas de Movimiento" class="w-full h-auto object-cover max-h-[500px]">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Prendas de Movimiento</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Muestra la legibilidad del logotipo sobre indumentaria para entrenamiento y yoga.</p>
+                        </div>
+                    </div>
+
+                    <div id="col2-slide-2" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/3R7cqJf7/MERSH.png" alt="Ropa de Descanso" class="w-full h-auto object-cover max-h-[500px]">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Ropa de Descanso</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Muestra la integración limpia de la marca sobre prendas cómodas de diario.</p>
+                        </div>
+                    </div>
+
+                    <div id="col2-slide-3" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/DZFMNypn/HAT.png" alt="Gorra Deportiva" class="w-full h-auto object-cover max-h-[500px]">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Gorra Deportiva Bordada</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Valida el comportamiento y relieve de la tipografía serif sobre accesorios cotidianos.</p>
+                        </div>
+                    </div>
+
+                    <div id="col2-slide-4" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/k49pHXY4/VELA.png" alt="Bienestar y Spa" class="w-full h-auto object-cover max-h-[500px]">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Espacio de Bienestar</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Demuestra cómo el logotipo convive con la tranquilidad del entorno de spa.</p>
+                        </div>
+                    </div>
+
+                    <div id="col2-slide-5" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/xCY4ZTp9/SHACKER.png" alt="Botella Mezcladora" class="w-full h-auto object-cover max-h-[500px]">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Botella Mezcladora</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Demuestra el grabado y resistencia del logotipo sobre superficies de acero inoxidable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menú Lateral Opción 2 -->
+                <div class="lg:col-span-4 space-y-2 flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible no-scrollbar py-2 lg:py-0">
+                    <button id="col2-nav-1" onclick="showSlideCol2(1)" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-brandIvory border border-brandOlive text-brandOlive transition-all duration-300">
+                        <span class="text-[10px] tracking-widest uppercase block text-brandGold font-bold mb-1">Aplicación 01</span>
+                        <span class="text-xs font-semibold block">Prendas Deportivas</span>
+                    </button>
+                    <button id="col2-nav-2" onclick="showSlideCol2(2)" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                        <span class="text-[10px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">Aplicación 02</span>
+                        <span class="text-xs font-semibold block">Ropa de Descanso</span>
+                    </button>
+                    <button id="col2-nav-3" onclick="showSlideCol2(3)" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                        <span class="text-[10px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">Aplicación 03</span>
+                        <span class="text-xs font-semibold block">Gorra Deportiva</span>
+                    </button>
+                    <button id="col2-nav-4" onclick="showSlideCol2(4)" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                        <span class="text-[10px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">Aplicación 04</span>
+                        <span class="text-xs font-semibold block">Espacio de Bienestar</span>
+                    </button>
+                    <button id="col2-nav-5" onclick="showSlideCol2(5)" class="flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300">
+                        <span class="text-[10px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1">Aplicación 05</span>
+                        <span class="text-xs font-semibold block">Botella de Suplemento</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Nota Aclaratoria de Diseño (Ubicada exactamente al final de la Fase 1) -->
+            <div class="mt-16 max-w-4xl mx-auto border-t border-brandSand pt-12 text-center space-y-4 font-sans">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-brandGold font-bold">Nota Aclaratoria de Diseño</span>
+                <p class="text-[10px] md:text-xs leading-relaxed text-brandOlive/60 max-w-2xl mx-auto font-light">
+                    Los elementos, prendas, accesorios y envases que se muestran en estas imágenes son representaciones puramente conceptuales (mockups). Su único propósito es evidenciar de manera práctica e ilustrativa cómo funcionan e interactúan las propuestas de logotipo en el entorno cotidiano de la marca. No constituyen de ninguna manera diseños de producto finales ni propuestas comerciales de artículos terminados.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== FASE 2: SISTEMA DE SEÑALÉTICA, PACKAGING E IMPLEMENTACIÓN DE MARCA ==================== -->
+    <section id="fase2" class="py-24 px-4 sm:px-8 md:px-12 lg:px-24 bg-brandSand/20 border-t border-brandSand relative">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-brandGold font-bold">Fase Dos / Desarrollo Industrial</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-widest text-brandOlive">SEÑALÉTIQUES &amp; PACKAGING</h2>
+                <div class="w-12 h-[1px] bg-brandGold mx-auto"></div>
+                <p class="text-xs text-brandOlive/80 max-w-xl mx-auto font-light leading-relaxed">
+                    Un análisis exhaustivo de la implementación física de Kairos Preserve. Explora a continuación los archivos reales de diseño vectorial y planos de producción técnica junto a sus guías y recomendaciones de materiales.
+                </p>
+            </div>
+
+            <!-- 1. CARRUSEL DE APLICACIONES TERMINADAS (PRIMER IMPACTO VISUAL) -->
+            <div class="mb-24 space-y-6">
+                <span class="text-[10px] tracking-widest uppercase text-brandGold font-bold block text-center">Visualización de Aplicaciones Reales</span>
+                
+                <div class="relative max-w-4xl mx-auto bg-brandSand/30 p-2 border border-brandSand/60">
+                    <!-- Flechas de Control del Carrusel -->
+                    <button onclick="prevSlideFase2()" class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brandIvory/80 hover:bg-brandIvory text-brandOlive border border-brandSand shadow-md flex items-center justify-center transition-all">
+                        &#10094;
+                    </button>
+                    <button onclick="nextSlideFase2()" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brandIvory/80 hover:bg-brandIvory text-brandOlive border border-brandSand shadow-md flex items-center justify-center transition-all">
+                        &#10095;
+                    </button>
+
+                    <!-- Slides de las Aplicaciones Fase 2 (6 Renders Reales) -->
+                    <div id="fase2-slide-1" class="fade-in">
+                        <img src="https://i.postimg.cc/cCVcPWHb/EDITADO-LETRERO-FRONT.png" alt="Letrero Corpóreo Frontal" class="w-full h-auto object-cover max-h-[500px] mx-auto">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand text-center">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Letrero Corpóreo Frontal</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Visualización del logotipo corpóreo 3D integrado a la pared principal de microcemento de la recepción.</p>
+                        </div>
+                    </div>
+
+                    <div id="fase2-slide-2" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/Kjd5Cbzs/EDITADO-LETRERO-PERSPEC-2.png" alt="Letrero Corpóreo Perspectiva" class="w-full h-auto object-cover max-h-[500px] mx-auto">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand text-center">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Letrero Corpóreo en Perspectiva</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Prueba espacial que demuestra el efecto tridimensional y la elegancia del relieve con luz cálida.</p>
+                        </div>
+                    </div>
+
+                    <div id="fase2-slide-3" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/cCVcPWHk/EDITADO-VASO-KRAFT-OLIVA.png" alt="Vaso Kraft Oliva" class="w-full h-auto object-cover max-h-[500px] mx-auto">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand text-center">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Vaso Kraft Verde Oliva</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Aplicación del logotipo en blanco sobre el vaso térmico de doble capa en el color insignia.</p>
+                        </div>
+                    </div>
+
+                    <div id="fase2-slide-4" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/6qDhFK3P/EDITADO-VASO-PULPA-CANA-1.png" alt="Vaso de Pulpa de Caña" class="w-full h-auto object-cover max-h-[500px] mx-auto">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand text-center">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Vaso de Pulpa de Caña</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Grabado del logotipo en tinta plana sobre la superficie mate y texturizada biodegradable.</p>
+                        </div>
+                    </div>
+
+                    <div id="fase2-slide-5" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/Y0JxT79Z/PS-EDITADO-FRONT-BEBIDA.png" alt="Botella Grab &amp; Go" class="w-full h-auto object-cover max-h-[500px] mx-auto">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand text-center">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Botella de Jugo Grab &amp; Go</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Validación del comportamiento y lectura de los stickers rectangulares sobre botellas de vidrio cilíndricas.</p>
+                        </div>
+                    </div>
+
+                    <div id="fase2-slide-6" class="fade-in hidden">
+                        <img src="https://i.postimg.cc/0jLChvQL/PS-EDITADO-STICKERS.png" alt="Stickers y Etiquetas" class="w-full h-auto object-cover max-h-[500px] mx-auto">
+                        <div class="p-6 bg-brandIvory border-t border-brandSand text-center">
+                            <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Sistema de Stickers y Sellos</span>
+                            <p class="text-xs text-brandOlive/80 font-light">Gama completa de fajas, sellos de seguridad e identificadores para envases alimenticios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. RECOMENDACIÓN DE MATERIALES UNIDA CON ARCHIVOS REALES (PLANO TÉCNICO) -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mt-12">
+                
+                <!-- Columna Izquierda: Menú Selector de Planos Reales -->
+                <div class="lg:col-span-4 space-y-3">
+                    <span class="text-[10px] tracking-widest uppercase text-brandGold font-bold block mb-4">Planos de Diseño Disponibles</span>
+                    
+                    <button id="btn-tech-1" onclick="switchTechDoc(1)" class="w-full text-left p-4 rounded-none bg-brandIvory border border-brandOlive text-brandOlive transition-all duration-300 block">
+                        <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1">Plano 01</span>
+                        <span class="text-xs font-semibold block">Letrero Corpóreo 3D</span>
+                    </button>
+                    
+                    <button id="btn-tech-2" onclick="switchTechDoc(2)" class="w-full text-left p-4 rounded-none bg-transparent border border-brandOlive/25 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300 block">
+                        <span class="text-[9px] tracking-widest uppercase text-brandOlive/40 font-bold block mb-1">Plano 02</span>
+                        <span class="text-xs font-semibold block">Vaso de Pulpa de Caña (16oz)</span>
+                    </button>
+                    
+                    <button id="btn-tech-3" onclick="switchTechDoc(3)" class="w-full text-left p-4 rounded-none bg-transparent border border-brandOlive/25 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300 block">
+                        <span class="text-[9px] tracking-widest uppercase text-brandOlive/40 font-bold block mb-1">Plano 03</span>
+                        <span class="text-xs font-semibold block">Vaso Doble Capa Kraft (12oz)</span>
+                    </button>
+                    
+                    <button id="btn-tech-4" onclick="switchTechDoc(4)" class="w-full text-left p-4 rounded-none bg-transparent border border-brandOlive/25 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300 block">
+                        <span class="text-[9px] tracking-widest uppercase text-brandOlive/40 font-bold block mb-1">Plano 04</span>
+                        <span class="text-xs font-semibold block">Sello de Seguridad Circular</span>
+                    </button>
+
+                    <button id="btn-tech-5" onclick="switchTechDoc(5)" class="w-full text-left p-4 rounded-none bg-transparent border border-brandOlive/25 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300 block">
+                        <span class="text-[9px] tracking-widest uppercase text-brandOlive/40 font-bold block mb-1">Plano 05</span>
+                        <span class="text-xs font-semibold block">Sticker Circular para Tapas (4")</span>
+                    </button>
+
+                    <button id="btn-tech-6" onclick="switchTechDoc(6)" class="w-full text-left p-4 rounded-none bg-transparent border border-brandOlive/25 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300 block">
+                        <span class="text-[9px] tracking-widest uppercase text-brandOlive/40 font-bold block mb-1">Plano 06</span>
+                        <span class="text-xs font-semibold block">Sticker Rectangular de Ensalada (2x3")</span>
+                    </button>
+
+                    <button id="btn-tech-7" onclick="switchTechDoc(7)" class="w-full text-left p-4 rounded-none bg-transparent border border-brandOlive/25 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300 block">
+                        <span class="text-[9px] tracking-widest uppercase text-brandOlive/40 font-bold block mb-1">Plano 07</span>
+                        <span class="text-xs font-semibold block">Sticker de Botella (2.5x4.25")</span>
+                    </button>
+                </div>
+
+                <!-- Columna Central/Derecha: Visualizador del Plano seleccionado y Ficha Técnica de Materiales -->
+                <div class="lg:col-span-8 bg-brandIvory border border-brandSand/80 p-6 md:p-8 space-y-8 shadow-sm">
+                    
+                    <!-- Contenedor Dinámico de Imagen del Plano -->
+                    <div class="border border-brandSand bg-white p-4 flex justify-center items-center relative overflow-hidden group min-h-[350px]">
+                        
+                        <!-- Letrero 3D (Plano Técnico Real) -->
+                        <div id="tech-img-1" class="tech-view-element">
+                            <img src="https://i.postimg.cc/yd2Yw6q3/image-(17).jpg" alt="Letrero Corpóreo 3D" class="max-h-[380px] w-auto object-contain mx-auto">
+                        </div>
+
+                        <!-- Vaso Pulpa 16oz (Archivo Real) -->
+                        <div id="tech-img-2" class="tech-view-element hidden">
+                            <img src="https://i.postimg.cc/hvBSPzf8/KAIROS-PRESERVE-CUP-16OZ.jpg" alt="Plano Vaso Pulpa 16oz" class="max-h-[380px] w-auto object-contain mx-auto">
+                        </div>
+
+                        <!-- Vaso Kraft Doble Capa 12oz (Archivo Real) -->
+                        <div id="tech-img-3" class="tech-view-element hidden">
+                            <img src="https://i.postimg.cc/j2bsdwLH/KAIROS-PRESERVE-CUP-DOBLE-CAPA-12OZ.jpg" alt="Plano Vaso Doble Capa 12oz" class="max-h-[380px] w-auto object-contain mx-auto">
+                        </div>
+
+                        <!-- Sticker de Seguridad (Archivo Real) -->
+                        <div id="tech-img-4" class="tech-view-element hidden">
+                            <img src="https://i.postimg.cc/RhBMV6NL/KP-STICKER-CIRCULAR-MINI-SELLOS-SEGURIDAD.jpg" alt="Plano Sello de Seguridad" class="max-h-[380px] w-auto object-contain mx-auto">
+                        </div>
+
+                        <!-- Sticker Circular de Tapas (Archivo Real) -->
+                        <div id="tech-img-5" class="tech-view-element hidden">
+                            <img src="https://i.postimg.cc/8cS1PJjL/KP-STICKER-CIRCULAR-TAPAS-BOWL-DIAMETRO-4.jpg" alt="Plano Sticker Circular 4 Pulgadas" class="max-h-[380px] w-auto object-contain mx-auto">
+                        </div>
+
+                        <!-- Sticker Rectangular Ensaladas (Archivo Real) -->
+                        <div id="tech-img-6" class="tech-view-element hidden">
+                            <img src="https://i.postimg.cc/cCSs4grQ/KP-STICKER-RECTANGULAR-MINI-ESALADA-LATERAL-2X3-copia.jpg" alt="Plano Sticker Lateral de Ensalada" class="max-h-[380px] w-auto object-contain mx-auto">
+                        </div>
+
+                        <!-- Sticker Rectangular Botellas -->
+                        <div id="tech-img-7" class="tech-view-element hidden">
+                            <img src="https://i.postimg.cc/cCSs4grQ/KP-STICKER-RECTANGULAR-MINI-ESALADA-LATERAL-2X3-copia.jpg" alt="Plano Sticker Rectangular de Botella" class="max-h-[380px] w-auto object-contain mx-auto">
+                        </div>
+
+                        <span class="absolute top-3 right-3 bg-brandOlive text-brandIvory text-[8px] font-mono tracking-widest px-2 py-1 uppercase">Plano Técnico</span>
+                    </div>
+
+                    <!-- Ficha Técnica de Especificaciones con Materiales Recomendados -->
+                    <div class="border-t border-brandSand pt-6 space-y-6">
+                        
+                        <!-- Letrero Corpóreo 3D Ficha -->
+                        <div id="tech-desc-1" class="tech-desc-element space-y-4">
+                            <h3 class="font-serif text-lg tracking-widest text-brandOlive">1. LETRERO CORPÓREO 3D (RECEPCIÓN)</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-brandOlive/80 font-light leading-relaxed">
+                                <div class="space-y-2">
+                                    <p><strong>Dimensiones Físicas:</strong> Ancho total de 48 pulgadas (48" en su parte más ancha). Extrusión / grosor tridimensional recomendado de 1 pulgada (1") para un relieve óptimo.</p>
+                                    <p><strong>Material de Fabricación:</strong> Aluminio o acero inoxidable cortado por láser de precisión o chorro de agua.</p>
+                                </div>
+                                <div class="space-y-2">
+                                    <p><strong>Acabado y Efecto:</strong> Oro champán oscuro satinado y cepillado (Dark Champagne Gold) para garantizar un contraste idóneo y sofisticado sobre el tono nude claro de la pared de microcemento.</p>
+                                    <p><strong>Efecto de Iluminación:</strong> Instalación flotante con espárragos de anclaje ocultos para integrar tira de luces LED flexible de 2700K (blanco cálido) en la parte posterior, creando un halo retroiluminado difuso.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vaso Pulpa 16oz Ficha -->
+                        <div id="tech-desc-2" class="tech-desc-element hidden space-y-4">
+                            <h3 class="font-serif text-lg tracking-widest text-brandOlive">2. VASO DE PULPA DE CAÑA DE AZÚCAR (16 OZ)</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-brandOlive/80 font-light leading-relaxed">
+                                <div class="space-y-2">
+                                    <p><strong>Dimensiones &amp; Capacidad:</strong> Formato de 16 onzas (16 oz), ideal para jugos prensados, bebidas frías y batidos de nutrición de la marca.</p>
+                                    <p><strong>Material Base Recomendado:</strong> Pulpa de caña de azúcar biodegradable (Unbleached Sugarcane Bagasse). Acabado crudo, poroso y mate de gran calidad sensorial, sin blanqueamiento químico.</p>
+                                </div>
+                                <div class="space-y-2">
+                                    <p><strong>Color e Integración:</strong> Tono crema / marfil natural de la pulpa cruda que resalta el enfoque puramente ecológico e integral de Kairos Preserve.</p>
+                                    <p><strong>Efecto de Imprenta:</strong> Tampografía industrial a una sola tinta plana (Deep Charcoal) que garantiza el perfecto anclaje del logotipo sobre la superficie rugosa.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vaso Kraft 12oz Ficha -->
+                        <div id="tech-desc-3" class="tech-desc-element hidden space-y-4">
+                            <h3 class="font-serif text-lg tracking-widest text-brandOlive">3. VASO KRAFT DE DOBLE CAPA (12 OZ)</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-brandOlive/80 font-light leading-relaxed">
+                                <div class="space-y-2">
+                                    <p><strong>Dimensiones &amp; Capacidad:</strong> Formato de 12 onzas (12 oz), idóneo para infusiones calientes, café consciente y matcha del bar.</p>
+                                    <p><strong>Material Base Recomendado:</strong> Cartón Kraft de doble capa estructurada (Double Wall) que previene la transmisión térmica excesiva de calor sin necesidad de usar mangas externas de cartón.</p>
+                                </div>
+                                <div class="space-y-2">
+                                    <p><strong>Color e Integración:</strong> Acabado liso, mate y sólido con impresión a fondeado completo (Solid Flood Coat) en el verde oliva característico de la marca.</p>
+                                    <p><strong>Efecto de Imprenta:</strong> Tampografía de alta definición a una sola tinta plana en color blanco puro, asegurando la nitidez de la tipografía serif y las curvas orgánicas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sello de Seguridad Ficha -->
+                        <div id="tech-desc-4" class="tech-desc-element hidden space-y-4">
+                            <h3 class="font-serif text-lg tracking-widest text-brandOlive">4. SELLO DE SEGURIDAD PARA ENVASES</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-brandOlive/80 font-light leading-relaxed">
+                                <div class="space-y-2">
+                                    <p><strong>Uso Recomendado:</strong> Cierre de seguridad, empaques compostables, bolsas kraft de entregas a domicilio y botellas selladas para Grab &amp; Go.</p>
+                                    <p><strong>Material Base Recomendado:</strong> Papel premium texturizado poroso de alta adherencia tipo Estate Ivory. Evitar completamente vinilos brillantes o polímeros plásticos.</p>
+                                </div>
+                                <div class="space-y-2">
+                                    <p><strong>Acabado &amp; Tacto:</strong> Textura mate porosa al tacto que refleja la calidad premium y el lujo silencioso del nuevo ecosistema.</p>
+                                    <p><strong>Efecto de Imprenta:</strong> Impresión flexográfica de alta resolución con tintas planas ecológicas al agua en color Deep Charcoal para un trazo limpio y sin sangrado.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sticker Circular 4" Ficha -->
+                        <div id="tech-desc-5" class="tech-desc-element hidden space-y-4">
+                            <h3 class="font-serif text-lg tracking-widest text-brandOlive">5. STICKER DE TAPAS PARA BOWLS DE ENSALADA</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-brandOlive/80 font-light leading-relaxed">
+                                <div class="space-y-2">
+                                    <p><strong>Dimensiones Físicas:</strong> Formato circular de 4 pulgadas (4") de diámetro, diseñado para cubrir de forma simétrica las tapas transparentes de los bowls.</p>
+                                    <p><strong>Material Base Recomendado:</strong> Papel texturizado premium Estate Ivory con tratamiento hidrófugo resistente a la humedad y a la condensación del frío.</p>
+                                </div>
+                                <div class="space-y-2">
+                                    <p><strong>Uso en Envase:</strong> Diseñado para bowls de plástico rPET ultra-translúcido reciclado de alta claridad, permitiendo que la frescura de los alimentos resalte bajo el logotipo.</p>
+                                    <p><strong>Efecto de Imprenta:</strong> Flexografía de alta nitidez en tinta plana Deep Charcoal para mantener el equilibrio estético del empaque.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sticker Rectangular 2x3" Ficha -->
+                        <div id="tech-desc-6" class="tech-desc-element hidden space-y-4">
+                            <h3 class="font-serif text-lg tracking-widest text-brandOlive">6. STICKER RECTANGULAR LATERAL PARA BOWL (2X3")</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-brandOlive/80 font-light leading-relaxed">
+                                <div class="space-y-2">
+                                    <p><strong>Dimensiones Físicas:</strong> Formato rectangular compacto de 2x3 pulgadas (2" x 3") con esquinas sutilmente redondeadas para un pegado ergonómico.</p>
+                                    <p><strong>Uso Recomendado:</strong> Faja adhesiva lateral de sellado en envases de ensaladas y snacks saludables.</p>
+                                </div>
+                                <div class="space-y-2">
+                                    <p><strong>Material Base Recomendado:</strong> Papel de alta adherencia Estate Ivory, totalmente mate y libre de laminados brillantes o capas de brillo gloss.</p>
+                                    <p><strong>Efecto de Imprenta:</strong> Impresión flexográfica con tintas de origen vegetal en color Deep Charcoal para lograr trazos perfectos y definidos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sticker Rectangular Botella 2.5x4.25" Ficha -->
+                        <div id="tech-desc-7" class="tech-desc-element hidden space-y-4">
+                            <h3 class="font-serif text-lg tracking-widest text-brandOlive">7. STICKER VERTICAL PARA BOTELLAS (2.5X4.25")</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-brandOlive/80 font-light leading-relaxed">
+                                <div class="space-y-2">
+                                    <p><strong>Dimensiones Físicas:</strong> Formato rectangular alargado de 2.5x4.25 pulgadas (2.5" x 4.25"), proporcionado para botellas cilíndricas de vidrio.</p>
+                                    <p><strong>Uso Recomendado:</strong> Faja de producto para botellas de vidrio de grado farmacéutico de 250ml y 500ml de infusiones, extractos prensados y tónicos.</p>
+                                </div>
+                                <div class="space-y-2">
+                                    <p><strong>Material Base Recomendado:</strong> Papel Estate Ivory con tratamiento resistente a la humedad constante de refrigeración para evitar deformaciones en el adhesivo.</p>
+                                    <p><strong>Efecto de Imprenta:</strong> Impresión de alta definición flexográfica con un trazo tipográfico limpio y uniforme.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nota de Producción/Disclaimer Técnico -->
+                        <div class="mt-4 pt-4 border-t border-brandSand/60 text-center">
+                            <p class="text-[9px] uppercase tracking-widest text-brandGold font-bold">Garantía de Fidelidad de Producción</p>
+                            <p class="text-[9px] text-brandOlive/60 font-light leading-relaxed mt-1">
+                                Las especificaciones de acabados, texturas y dimensiones detalladas en esta guía técnica actúan como parámetros recomendados de manufactura. Su objetivo principal es asegurar que los proveedores finales ejecuten la producción física de manera óptima, garantizando que el resultado real sea idéntico y completamente fiel a la estética, el refinamiento y el universo visual que ya hemos diseñado.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== FASE 3: SISTEMA DE IMPLEMENTACIONES ADICIONALES (TEXTIL & LIFESTYLE) ==================== -->
+    <section id="fase3" class="py-24 px-4 sm:px-8 md:px-12 lg:px-24 bg-brandIvory border-t border-brandSand relative">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="text-center space-y-4 mb-20">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-brandGold font-bold">Fase Tres / Colección Textil &amp; Estilo de Vida</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-widest text-brandOlive">LIFESTYLE &amp; APPAREL</h2>
+                <div class="w-12 h-[1px] bg-brandGold mx-auto"></div>
+                <p class="text-xs text-brandOlive/80 max-w-xl mx-auto font-light leading-relaxed">
+                    La traducción material de Kairos Preserve en prendas y accesorios de alto nivel. Una curaduría de elementos diseñados bajo estrictas pautas de textura, branding sutil y materiales premium para unificar el cuidado integral diario.
+                </p>
+            </div>
+
+            <!-- ================= PRODUCTO 1: CAPS COLLECTION (PRIMER IMPACTO) ================= -->
+            <div id="caps-collection" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-b border-brandSand pb-20 mb-20">
+                
+                <!-- Columna de Información Editorial -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block">Colección Textil 01 / Gorras</span>
+                        <h3 class="font-serif text-2xl md:text-3xl tracking-widest text-brandOlive">CAPS COLLECTION</h3>
+                        <div class="w-8 h-[1px] bg-brandGold"></div>
+                    </div>
+                    
+                    <p class="text-xs md:text-sm leading-relaxed text-brandOlive/80 font-light">
+                        "Diseñadas bajo el principio de la simetría y la sobriedad. Cada pieza utiliza una estructura desestructurada de perfil bajo que se adapta con naturalidad, convirtiéndose en una extensión de la identidad diaria. No es un accesorio deportivo genérico; es una declaración de intención y cuidado personal, enmarcada por texturas orgánicas que recuerdan al lino y la piedra travertino."
+                    </p>
+
+                    <!-- Ficha Técnica de Materiales -->
+                    <div class="border-t border-brandSand/60 pt-4 space-y-3">
+                        <span class="text-[9px] tracking-wider uppercase text-brandOlive font-semibold block">Ficha de Materiales Recomendados</span>
+                        <div class="grid grid-cols-2 gap-4 text-[10px] leading-relaxed text-brandOlive/70 font-light">
+                            <div>
+                                <p><strong>Cuerpo Principal:</strong><br>100% Canvas de Algodón Orgánico texturizado (Efecto Lino/Linen-wash) o Nylon Técnico de alta densidad con acabado mate.</p>
+                            </div>
+                            <div>
+                                <p><strong>Herrajes y Cierre:</strong><br>Correa ajustable del mismo material de la corona, complementada con un pasador y hebilla metálica de Latón Dorado cepillado (Brass Details) grabado sutilmente con láser.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detalles Singulares del Modelo -->
+                    <div class="bg-brandSand/20 p-4 border border-brandSand text-[10px] text-brandOlive/80 font-light space-y-1">
+                        <p><strong>Panel Frontal:</strong> Bordado en relieve tonal de alta densidad con el isotipo 'K' y el logotipo completo de Kairos Preserve.</p>
+                        <p><strong>Lateral / Posterior:</strong> Frase institucional bordada con hilo de bajo contraste: <span class="font-semibold italic">"CREATED IN HIS IMAGE"</span>.</p>
+                    </div>
+                </div>
+
+                <!-- Columna del Visor Dinámico de Imágenes -->
+                <div class="lg:col-span-7 bg-brandSand/25 p-4 border border-brandSand/60 flex flex-col space-y-4">
+                    
+                    <!-- Contenedor Principal de Imagen -->
+                    <div class="bg-brandIvory border border-brandSand/80 p-2 relative flex items-center justify-center min-h-[300px] sm:min-h-[400px]">
+                        <!-- Imágenes de la Carpeta 1: Gorras -->
+                        <img id="cap-img-1" src="https://i.postimg.cc/FRtTzkrR/Principal-1.png" alt="Gorra Vista Principal Beige" class="max-h-[400px] w-auto object-contain">
+                        <img id="cap-img-2" src="https://i.postimg.cc/bJXmrSyr/Principal-2.png" alt="Gorra Vista Principal Verde Oliva" class="max-h-[400px] w-auto object-contain hidden">
+                        <img id="cap-img-3" src="https://i.postimg.cc/zBmxvHzN/clouse-Up-Principal-1.png" alt="Gorra Close Up Detalle de Frase" class="max-h-[400px] w-auto object-contain hidden">
+                        <img id="cap-img-4" src="https://i.postimg.cc/k4rTGRJ9/clouse-Up-Principal-2.png" alt="Gorra Close Up Hebilla de Latón" class="max-h-[400px] w-auto object-contain hidden">
+                        <img id="cap-img-5" src="https://i.postimg.cc/BvxJXDTD/color-secundario-2.png" alt="Gorra Vista Color Secundario" class="max-h-[400px] w-auto object-contain hidden">
+                        <img id="cap-img-6" src="https://i.postimg.cc/3RMtN08T/clouse-Up-color-secundario-2.png" alt="Gorra Close Up Hebilla Color Secundario" class="max-h-[400px] w-auto object-contain hidden">
+                    
+                        <span class="absolute bottom-4 left-4 bg-brandOlive text-brandIvory text-[8px] tracking-widest uppercase px-2 py-1" id="cap-img-label">Vista Principal: Beige</span>
+                    </div>
+
+                    <!-- Menú de Selección de Tomas -->
+                    <div class="grid grid-cols-3 sm:grid-cols-6 gap-2">
+                        <button id="cap-btn-1" onclick="switchCapView(1, 'Vista Principal: Beige')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive bg-brandOlive text-brandIvory transition-all">Principal 1</button>
+                        <button id="cap-btn-2" onclick="switchCapView(2, 'Vista Principal: Oliva')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Principal 2</button>
+                        <button id="cap-btn-3" onclick="switchCapView(3, 'Detalle Lateral: Created In His Image')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Detalle 1</button>
+                        <button id="cap-btn-4" onclick="switchCapView(4, 'Detalle Posterior: Hebilla de Latón')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Detalle 2</button>
+                        <button id="cap-btn-5" onclick="switchCapView(5, 'Color Alternativo: Terracota')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Secundario 1</button>
+                        <button id="cap-btn-6" onclick="switchCapView(6, 'Detalle Posterior: Hebilla Terracota')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Secundario 2</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ================= PRODUCTO 2: FULL SETS & AMBIENT (SETS COMPLETOS & WELLNESS BAR) ================= -->
+            <div id="full-sets-collection" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-b border-brandSand pb-20 mb-20">
+                
+                <!-- Columna del Visor Dinámico de Imágenes (Lado Izquierdo) -->
+                <div class="lg:col-span-7 bg-brandSand/25 p-4 border border-brandSand/60 flex flex-col space-y-4 order-2 lg:order-1">
+                    
+                    <!-- Contenedor Principal de Imagen -->
+                    <div class="bg-brandIvory border border-brandSand/80 p-2 relative flex items-center justify-center min-h-[300px] sm:min-h-[400px]">
+                        <!-- Imágenes de la Carpeta 2: Set Completo -->
+                        <img id="set-img-1" src="https://i.postimg.cc/9fGcrTdZ/barra-set-deportivo.png" alt="Entorno del Wellness Bar" class="max-h-[400px] w-auto object-contain">
+                        <img id="set-img-2" src="https://i.postimg.cc/0QWrZDzb/barra-set-deportivo-2.png" alt="Modelo en la Barra de Jugos" class="max-h-[400px] w-auto object-contain hidden">
+                        <img id="set-img-3" src="https://i.postimg.cc/fL2k5mVt/outfit-2.png" alt="Set Deportivo en Reformador de Pilates" class="max-h-[400px] w-auto object-contain hidden">
+                        <img id="set-img-4" src="https://i.postimg.cc/W3WtSgdD/tsgirt-leggins-kairos-outfit-1.png" alt="Detalle del Legging en Studio" class="max-h-[400px] w-auto object-contain hidden">
+                    
+                        <span class="absolute bottom-4 left-4 bg-brandOlive text-brandIvory text-[8px] tracking-widest uppercase px-2 py-1" id="set-img-label">Wellness Bar: Vista General</span>
+                    </div>
+
+                    <!-- Menú de Selección de Tomas -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                        <button id="set-btn-1" onclick="switchSetView(1, 'Wellness Bar: Vista General')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive bg-brandOlive text-brandIvory transition-all">Barra 1</button>
+                        <button id="set-btn-2" onclick="switchSetView(2, 'Wellness Bar: Detalle de Consumo')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Barra 2</button>
+                        <button id="set-btn-3" onclick="switchSetView(3, 'Set de Pilates: Vista Espalda')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Outfit 1</button>
+                        <button id="set-btn-4" onclick="switchSetView(4, 'Set de Pilates: Detalle Lateral')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Outfit 2</button>
+                    </div>
+                </div>
+
+                <!-- Columna de Información Editorial (Lado Derecho) -->
+                <div class="lg:col-span-5 space-y-6 order-1 lg:order-2">
+                    <div class="space-y-2">
+                        <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block">Colección Textil 02 / Set Completo</span>
+                        <h3 class="font-serif text-2xl md:text-3xl tracking-widest text-brandOlive">PILATES ACTIVEWEAR SET</h3>
+                        <div class="w-8 h-[1px] bg-brandGold"></div>
+                    </div>
+                    
+                    <p class="text-xs md:text-sm leading-relaxed text-brandOlive/80 font-light">
+                        "El balance perfecto entre el soporte técnico y la fluidez anatómica. Inspirado en la sofisticación de los estudios de longevidad, este conjunto de dos piezas abraza el cuerpo ofreciendo compresión inteligente y una estética ultra-mate. Pensado para transicionar con elegancia desde una sesión de Pilates Reformer premium hasta el espacio de barra de bienestar."
+                    </p>
+
+                    <!-- Ficha Técnica de Materiales -->
+                    <div class="border-t border-brandSand/60 pt-4 space-y-3">
+                        <span class="text-[9px] tracking-wider uppercase text-brandOlive font-semibold block">Ficha de Materiales Recomendados</span>
+                        <div class="grid grid-cols-2 gap-4 text-[10px] leading-relaxed text-brandOlive/70 font-light">
+                            <div>
+                                <p><strong>Top Halter &amp; Leggings:</strong><br>Mezcla premium de 75% Nylon Técnico de Doble Capa y 25% Elastano de Alta Recuperación (Efecto Airlift / Second-Skin).</p>
+                            </div>
+                            <div>
+                                <p><strong>Acabado Textil:</strong><br>Tacto frío, opacidad total (Squat-proof) y microcepillado para un tacto ultra-suave mate que elimina cualquier brillo sintético.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detalles Singulares del Modelo -->
+                    <div class="bg-brandSand/20 p-4 border border-brandSand text-[10px] text-brandOlive/80 font-light space-y-1">
+                        <p><strong>Diseño de Leggings:</strong> Tiro extra alto con costura cruzada anatómica de compresión suave en la cintura.</p>
+                        <p><strong>Branding Sutil:</strong> Isotipo 'K' en silicona flexible reflectante a tono en la zona lumbar baja de los leggings y en el lateral superior del top halter.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ================= PRODUCTO 3: T-SHIRTS COLLECTION ================= -->
+            <div id="tshirts-collection" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-b border-brandSand pb-20 mb-20">
+                
+                <!-- Columna de Información Editorial -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-[9px] tracking-widest uppercase text-brandGold font-bold block">Colección Textil 03 / Camisetas</span>
+                        <h3 class="font-serif text-2xl md:text-3xl tracking-widest text-brandOlive">EDITORIAL T-SHIRTS</h3>
+                        <div class="w-8 h-[1px] bg-brandGold"></div>
+                    </div>
+                    
+                    <p class="text-xs md:text-sm leading-relaxed text-brandOlive/80 font-light">
+                        "La reinvención de la silueta básica bajo la óptica de la sofisticación. Con cortes limpios que acentúan la postura y caídas de peso medio que transmiten estructura, estas prendas combinan la tipografía editorial minimalista con una sobriedad atemporal. Es la manifestación textil de un estilo de vida enfocado en la longevidad y el diseño consciente."
+                    </p>
+
+                    <!-- Ficha Técnica de Materiales -->
+                    <div class="border-t border-brandSand/60 pt-4 space-y-3">
+                        <span class="text-[9px] tracking-wider uppercase text-brandOlive font-semibold block">Ficha de Materiales Recomendados</span>
+                        <div class="grid grid-cols-2 gap-4 text-[10px] leading-relaxed text-brandOlive/70 font-light">
+                            <div>
+                                <p><strong>Variante Dama (Cropped Slim):</strong><br>92% Algodón Supima de fibra extralarga y 8% Spandex (Tejido entrelazado de punto fino que se amolda sin generar arrugas toscas).</p>
+                            </div>
+                            <div>
+                                <p><strong>Variante Caballero (Boxy Fit):</strong><br>100% Algodón Orgánico de 240g (Heavyweight Cotton) con lavado suavizante al silicio para un acabado mate impecable.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detalles Singulares del Modelo -->
+                    <div class="bg-brandSand/20 p-4 border border-brandSand text-[10px] text-brandOlive/80 font-light space-y-1">
+                        <p><strong>Frontal Editorial:</strong> Tipografía estilizada de estilo editorial fino que integra las frases núcleo del concepto de la marca (<span class="italic">"HIS WORKMANSHIP"</span>, <span class="italic">"CREATED"</span>).</p>
+                        <p><strong>Posterior Estructural:</strong> Isotipo 'K' ampliado y centrado justo debajo de la costura trasera del rib del cuello, ejecutado en estampado de alta densidad con acabado mate al tacto.</p>
+                    </div>
+                </div>
+
+                <!-- Columna del Visor Dinámico de Imágenes -->
+                <div class="lg:col-span-7 bg-brandSand/25 p-4 border border-brandSand/60 flex flex-col space-y-4">
+                    
+                    <!-- Contenedor Principal de Imagen -->
+                    <div class="bg-brandIvory border border-brandSand/80 p-2 relative flex items-center justify-center min-h-[300px] sm:min-h-[400px]">
+                        <!-- Imágenes de la Carpeta 4: T-Shirts -->
+                        <img id="tshirt-img-1" src="https://i.postimg.cc/tgm8R4fk/model-colorbone-1.png" alt="Camiseta Crop en Percha" class="max-h-[400px] w-auto object-contain">
+                        <img id="tshirt-img-2" src="https://i.postimg.cc/jjkBqS9X/tshirt-frase.png" alt="Modelo vistiendo la camiseta" class="max-h-[400px] w-auto object-contain hidden">
+                        <img id="tshirt-img-3" src="https://i.postimg.cc/xdFBj17g/tshirt-frase-2.png" alt="Camiseta Detalle del Estampado" class="max-h-[400px] w-auto object-contain hidden">
+                        <img id="tshirt-img-4" src="https://i.postimg.cc/QMnvNdP0/t-shirt-men-back.png" alt="Detalle Trasero de Isotipo" class="max-h-[400px] w-auto object-contain hidden">
+                    
+                        <span class="absolute bottom-4 left-4 bg-brandOlive text-brandIvory text-[8px] tracking-widest uppercase px-2 py-1" id="tshirt-img-label">T-Shirt: Detalle en Percha</span>
+                    </div>
+
+                    <!-- Menú de Selección de Tomas -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                        <button id="tshirt-btn-1" onclick="switchTshirtView(1, 'T-Shirt: Detalle en Percha')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive bg-brandOlive text-brandIvory transition-all">Modelo 1</button>
+                        <button id="tshirt-btn-2" onclick="switchTshirtView(2, 'T-Shirt: En Reformador')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Modelo 2</button>
+                        <button id="tshirt-btn-3" onclick="switchTshirtView(3, 'T-Shirt: Detalle Frontal')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Detalle 1</button>
+                        <button id="tshirt-btn-4" onclick="switchTshirtView(4, 'T-Shirt: Isotipo Posterior')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Detalle 2</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ================= PRODUCTO 4: PILATES SOCKS (MEDIAS DE ESTABILIDAD) ================= -->
+            <div id="socks-collection" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Columna del Visor Dinámico de Imágenes (Lado Izquierdo) -->
+                <div class="lg:col-span-7 bg-brandSand/25 p-4 border border-brandSand/60 flex flex-col space-y-4 order-2 lg:order-1">
+                    
+                    <!-- Contenedor Principal de Imagen -->
+                    <div class="bg-brandIvory border border-brandSand/80 p-2 relative flex items-center justify-center min-h-[300px] sm:min-h-[400px]">
+                        <!-- Imágenes de la Carpeta 3: Medias -->
+                        <img id="sock-img-1" src="https://i.postimg.cc/Cxc1wb4C/antiresbalante-sox-for-pilates-1.png" alt="Medias en pies en Reformador" class="max-h-[400px] w-auto object-contain">
+                        <img id="sock-img-2" src="https://i.postimg.cc/8zZ5TLbH/patron-antiresbalante-1.png" alt="Detalle de Suela Antiresbalante" class="max-h-[400px] w-auto object-contain hidden">
+                        <img id="sock-img-3" src="https://i.postimg.cc/K80zmt55/regular-sox.png" alt="Medias Dobladas en Pedestal de Piedra" class="max-h-[400px] w-auto object-contain hidden">
+                        <img id="sock-img-4" src="https://i.postimg.cc/mgmDT7SY/regular-sox-2.png" alt="Modelo entrenando con las medias" class="max-h-[400px] w-auto object-contain hidden">
+                        <img id="sock-img-5" src="https://i.postimg.cc/4xWdXp1L/regular-sox-green.png" alt="Medias Dobladas Verdes en Madera" class="max-h-[400px] w-auto object-contain hidden">
+                    
+                        <span class="absolute bottom-4 left-4 bg-brandOlive text-brandIvory text-[8px] tracking-widest uppercase px-2 py-1" id="sock-img-label">Medias: Uso en Studio</span>
+                    </div>
+
+                    <!-- Menú de Selección de Tomas -->
+                    <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+                        <button id="sock-btn-1" onclick="switchSockView(1, 'Medias: Uso en Studio')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive bg-brandOlive text-brandIvory transition-all">Vista 1</button>
+                        <button id="sock-btn-2" onclick="switchSockView(2, 'Medias: Detalle de Suela')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Vista 2</button>
+                        <button id="sock-btn-3" onclick="switchSockView(3, 'Medias: Detalle Textura')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Vista 3</button>
+                        <button id="sock-btn-4" onclick="switchSockView(4, 'Medias: Rutina Estabilidad')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Vista 4</button>
+                        <button id="sock-btn-5" onclick="switchSockView(5, 'Medias: Color Verde Oliva')" class="px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all">Vista 5</button>
+                    </div>
+                </div>
+
+                <!-- Columna de Información Editorial (Lado Derecho) -->
+                <div class="lg:col-span-5 space-y-6 order-1 lg:order-2">
+                    <div class="space-y-2">
+                        <span class="text-[9px] tracking-wider uppercase text-brandGold font-bold block">Colección Textil 04 / Medias</span>
+                        <h3 class="font-serif text-2xl md:text-3xl tracking-widest text-brandOlive">STABILITY GRIP SOCKS</h3>
+                        <div class="w-8 h-[1px] bg-brandGold"></div>
+                    </div>
+                    
+                    <p class="text-xs md:text-sm leading-relaxed text-brandOlive/80 font-light">
+                        "Precisión en cada punto de apoyo. Diseñadas específicamente para la práctica de Pilates y rutinas de estabilidad, nuestras medias fusionan la calidez del algodón premium con un sistema de agarre de ingeniería geométrica. Una pieza esencial de rendimiento técnico que respeta el diseño minimalista y la limpieza visual de la marca."
+                    </p>
+
+                    <!-- Ficha Técnica de Materiales -->
+                    <div class="border-t border-brandSand/60 pt-4 space-y-3">
+                        <span class="text-[9px] tracking-wider uppercase text-brandOlive font-semibold block">Ficha de Materiales Recomendados</span>
+                        <div class="grid grid-cols-2 gap-4 text-[10px] leading-relaxed text-brandOlive/70 font-light">
+                            <div>
+                                <p><strong>Tejido Base Heavyweight:</strong><br>82% Algodón Peinado Orgánico de cabo grueso, 15% Nylon de alta resistencia y 3% Spandex para un ajuste que no se deforma tras los lavados.</p>
+                            </div>
+                            <div>
+                                <p><strong>Tracción de Tránsito Alto:</strong><br>Inyección directa de Silicona de Alto Tráfico curada al calor en base, configurada en líneas y círculos concéntricos de alta tracción.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detalles Singulares del Modelo -->
+                    <div class="bg-brandSand/20 p-4 border border-brandSand text-[10px] text-brandOlive/80 font-light space-y-1">
+                        <p><strong>Estructura Anatomica:</strong> Caña media con tejido de canalé denso y elástico (ribbed cuff) de alta tensión que evita cualquier tipo de deslizamiento en el tobillo.</p>
+                        <p><strong>Detalles de Branding:</strong> Logotipo "Kairos Preserve" integrado en contraste debajo de la suela dentro del patrón de silicona, e Isotipo 'K' bordado a juego en el lateral de la caña.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ================= BLOQUE EDITORIAL DE CIERRE: MANIFIESTO KAIROS PRESERVE ================= -->
+            <div class="mt-28 max-w-4xl mx-auto border-t border-brandSand pt-20 text-center space-y-8">
+                <span class="text-[10px] tracking-[0.3em] uppercase text-brandGold font-bold block">Conclusión de Dirección de Arte</span>
+                <h3 class="font-serif text-2xl sm:text-3xl tracking-[0.15em] text-brandOlive">EL TIEMPO PERFECTO: HONRAR LA CREACIÓN</h3>
+                <div class="w-12 h-[1px] bg-brandGold mx-auto"></div>
+                
+                <div class="space-y-6 text-xs sm:text-sm leading-relaxed text-brandOlive/80 font-light max-w-3xl mx-auto text-justify sm:text-center">
+                    <p>
+                        Cada textura seleccionada, cada plano técnico analizado y cada silueta que da vida a esta propuesta de identidad es el resultado directo de un **camino de cocreación**. Guiado profundamente por las ideas y las pautas enviadas en su base, he dedicado mi esfuerzo a materializar un universo coherente que transiciona desde el rendimiento atlético hacia una cultura de bienestar superior.
+                    </p>
+                    <p>
+                        Bajo los principios de un lujo silencioso (*quiet luxury*), los materiales recomendados para empaques y textiles priorizan texturas orgánicas e implementaciones sustentables que conviven con la naturaleza. Busco evocar un estado de paz genuina y una sofisticación libre de pretensiones, diseñada para honrar la vida diaria a partir de la esencia misma del tiempo exacto: el **Kairos**.
+                    </p>
+                </div>
+                
+                <div class="pt-4">
+                    <span class="text-[10px] font-mono tracking-widest uppercase text-brandGold block">Nourish Today. Preserve Tomorrow.</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer General -->
+    <footer class="bg-brandOlive text-brandIvory py-16 px-6 text-center border-t border-brandOlive/20">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <h3 class="font-serif text-2xl tracking-[0.2em] uppercase">KAIROS PRESERVE</h3>
+            <p class="text-xs tracking-widest text-brandIvory/60 max-w-md mx-auto leading-relaxed">
+                Nourish Today. Preserve Tomorrow.<br>
+                Propuesta de Identidad y Dirección de Arte.
+            </p>
+            <div class="pt-8 border-t border-brandIvory/10 text-[10px] text-brandIvory/40 tracking-wider">
+                &copy; 2026 Kairos Preserve. Diseñado para integración de Repositorios en GitHub Pages.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lógica de Control Dinámico de Diapositivas, Selector de Logo y Fichas Técnicas -->
+    <script>
+        let currentSlideCol1 = 1;
+        const totalSlidesCol1 = 6; 
+
+        let currentSlideCol2 = 1;
+        const totalSlidesCol2 = 5; 
+
+        let currentSlideFase2 = 1;
+        const totalSlidesFase2 = 6; 
+
+        // Cambiar de Colección de Aplicaciones (Logo 1 vs Logo 2)
+        function toggleCollection(colNumber) {
+            const container1 = document.getElementById('collection-1-container');
+            const container2 = document.getElementById('collection-2-container');
+            const btn1 = document.getElementById('btn-col1');
+            const btn2 = document.getElementById('btn-col2');
+
+            if (colNumber === 1) {
+                container1.classList.remove('hidden');
+                container2.classList.add('hidden');
+                btn1.className = "px-4 py-2 text-[10px] uppercase tracking-widest font-semibold bg-brandOlive text-brandIvory transition-all duration-300 rounded-none";
+                btn2.className = "px-4 py-2 text-[10px] uppercase tracking-widest font-semibold text-brandOlive/60 hover:text-brandOlive transition-all duration-300 rounded-none";
+            } else {
+                container1.classList.add('hidden');
+                container2.classList.remove('hidden');
+                btn1.className = "px-4 py-2 text-[10px] uppercase tracking-widest font-semibold text-brandOlive/60 hover:text-brandOlive transition-all duration-300 rounded-none";
+                btn2.className = "px-4 py-2 text-[10px] uppercase tracking-widest font-semibold bg-brandOlive text-brandIvory transition-all duration-300 rounded-none";
+            }
+        }
+
+        // CONTROL SLIDER COLECCIÓN 1
+        function showSlideCol1(index) {
+            currentSlideCol1 = index;
+            for (let i = 1; i <= totalSlidesCol1; i++) {
+                document.getElementById('col1-slide-' + i).classList.add('hidden');
+                let navBtn = document.getElementById('col1-nav-' + i);
+                navBtn.className = "flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300";
+                let badgeText = navBtn.querySelector('span:first-child');
+                badgeText.className = "text-[10px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1";
+            }
+            
+            document.getElementById('col1-slide-' + index).classList.remove('hidden');
+            let activeBtn = document.getElementById('col1-nav-' + index);
+            activeBtn.className = "flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-brandIvory border border-brandOlive text-brandOlive transition-all duration-300";
+            let activeBadge = activeBtn.querySelector('span:first-child');
+            activeBadge.className = "text-[10px] tracking-widest uppercase block text-brandGold font-bold mb-1";
+        }
+
+        // CONTROL SLIDER COLECCIÓN 2
+        function showSlideCol2(index) {
+            currentSlideCol2 = index;
+            for (let i = 1; i <= totalSlidesCol2; i++) {
+                document.getElementById('col2-slide-' + i).classList.add('hidden');
+                let navBtn = document.getElementById('col2-nav-' + i);
+                navBtn.className = "flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-transparent border border-brandOlive/20 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300";
+                let badgeText = navBtn.querySelector('span:first-child');
+                badgeText.className = "text-[10px] tracking-widest uppercase block text-brandOlive/40 font-bold mb-1";
+            }
+            
+            document.getElementById('col2-slide-' + index).classList.remove('hidden');
+            let activeBtn = document.getElementById('col2-nav-' + index);
+            activeBtn.className = "flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-none bg-brandIvory border border-brandOlive text-brandOlive transition-all duration-300";
+            let activeBadge = activeBtn.querySelector('span:first-child');
+            activeBadge.className = "text-[10px] tracking-widest uppercase block text-brandGold font-bold mb-1";
+        }
+
+        // CONTROL SLIDER APLICACIONES FASE 2
+        function showSlideFase2(index) {
+            currentSlideFase2 = index;
+            for (let i = 1; i <= totalSlidesFase2; i++) {
+                document.getElementById('fase2-slide-' + i).classList.add('hidden');
+            }
+            document.getElementById('fase2-slide-' + index).classList.remove('hidden');
+        }
+
+        function nextSlideFase2() {
+            let next = currentSlideFase2 + 1;
+            if (next > totalSlidesFase2) next = 1;
+            showSlideFase2(next);
+        }
+
+        function prevSlideFase2() {
+            let prev = currentSlideFase2 - 1;
+            if (prev < 1) prev = totalSlidesFase2;
+            showSlideFase2(prev);
+        }
+
+        // CONTROL DE DOCUMENTOS TÉCNICOS (FASE 2)
+        function switchTechDoc(index) {
+            const totalDocs = 7;
+            for (let i = 1; i <= totalDocs; i++) {
+                document.getElementById('tech-img-' + i).classList.add('hidden');
+                document.getElementById('tech-desc-' + i).classList.add('hidden');
+                
+                let navBtn = document.getElementById('btn-tech-' + i);
+                navBtn.className = "w-full text-left p-4 rounded-none bg-transparent border border-brandOlive/25 text-brandOlive/70 hover:bg-brandIvory/50 transition-all duration-300 block";
+                
+                let badge = navBtn.querySelector('span:first-child');
+                badge.className = "text-[9px] tracking-widest uppercase text-brandOlive/40 font-bold block mb-1";
+            }
+
+            document.getElementById('tech-img-' + index).classList.remove('hidden');
+            document.getElementById('tech-desc-' + index).classList.remove('hidden');
+            
+            let activeBtn = document.getElementById('btn-tech-' + index);
+            activeBtn.className = "w-full text-left p-4 rounded-none bg-brandIvory border border-brandOlive text-brandOlive transition-all duration-300 block";
+            
+            let activeBadge = activeBtn.querySelector('span:first-child');
+            activeBadge.className = "text-[9px] tracking-widest uppercase text-brandGold font-bold block mb-1";
+        }
+
+        // SWITCH PROPUESTAS LOGO
+        function switchLogo(option) {
+            let logo1 = document.getElementById('logo-option-1');
+            let logo2 = document.getElementById('logo-option-2');
+            let btn1 = document.getElementById('btn-logo1');
+            let btn2 = document.getElementById('btn-logo2');
+
+            if (option === 1) {
+                logo1.classList.remove('hidden');
+                logo2.classList.add('hidden');
+                btn1.className = "px-6 py-2.5 text-xs uppercase tracking-widest border border-brandOlive bg-brandOlive text-brandIvory transition-all duration-300 rounded-none font-medium";
+                btn2.className = "px-6 py-2.5 text-xs uppercase tracking-widest border border-brandOlive/30 text-brandOlive hover:border-brandOlive transition-all duration-300 rounded-none font-medium";
+            } else {
+                logo1.classList.add('hidden');
+                logo2.classList.remove('hidden');
+                btn1.className = "px-6 py-2.5 text-xs uppercase tracking-widest border border-brandOlive/30 text-brandOlive hover:border-brandOlive transition-all duration-300 rounded-none font-medium";
+                btn2.className = "px-6 py-2.5 text-xs uppercase tracking-widest border border-brandOlive bg-brandOlive text-brandIvory transition-all duration-300 rounded-none font-medium";
+            }
+        }
+
+        // ================= SCRIPTS DE CONTROL DE VISTAS FASE 3 =================
+        // CONTROL SWITCHER GORRAS (CARPETA 1)
+        function switchCapView(index, label) {
+            const totalViews = 6;
+            for (let i = 1; i <= totalViews; i++) {
+                document.getElementById('cap-img-' + i).classList.add('hidden');
+                document.getElementById('cap-btn-' + i).className = "px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all";
+            }
+            document.getElementById('cap-img-' + index).classList.remove('hidden');
+            document.getElementById('cap-btn-' + index).className = "px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive bg-brandOlive text-brandIvory transition-all";
+            document.getElementById('cap-img-label').innerText = label;
+        }
+
+        // CONTROL SWITCHER OUTFITS / BAR (CARPETA 2)
+        function switchSetView(index, label) {
+            const totalViews = 4;
+            for (let i = 1; i <= totalViews; i++) {
+                document.getElementById('set-img-' + i).classList.add('hidden');
+                document.getElementById('set-btn-' + i).className = "px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all";
+            }
+            document.getElementById('set-img-' + index).classList.remove('hidden');
+            document.getElementById('set-btn-' + index).className = "px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive bg-brandOlive text-brandIvory transition-all";
+            document.getElementById('set-img-label').innerText = label;
+        }
+
+        // CONTROL SWITCHER CAMISETAS (CARPETA 4)
+        function switchTshirtView(index, label) {
+            const totalViews = 4;
+            for (let i = 1; i <= totalViews; i++) {
+                document.getElementById('tshirt-img-' + i).classList.add('hidden');
+                document.getElementById('tshirt-btn-' + i).className = "px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all";
+            }
+            document.getElementById('tshirt-img-' + index).classList.remove('hidden');
+            document.getElementById('tshirt-btn-' + index).className = "px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive bg-brandOlive text-brandIvory transition-all";
+            document.getElementById('tshirt-img-label').innerText = label;
+        }
+
+        // CONTROL SWITCHER MEDIAS (CARPETA 3)
+        function switchSockView(index, label) {
+            const totalViews = 5;
+            for (let i = 1; i <= totalViews; i++) {
+                document.getElementById('sock-img-' + i).classList.add('hidden');
+                document.getElementById('sock-btn-' + i).className = "px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive/20 text-brandOlive/60 hover:border-brandOlive/50 transition-all";
+            }
+            document.getElementById('sock-img-' + index).classList.remove('hidden');
+            document.getElementById('sock-btn-' + index).className = "px-2 py-2 text-[8px] uppercase tracking-wider font-semibold border border-brandOlive bg-brandOlive text-brandIvory transition-all";
+            document.getElementById('sock-img-label').innerText = label;
+        }
+    </script>
+</body>
+</html>
